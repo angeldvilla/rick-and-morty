@@ -22,5 +22,5 @@ const Cards = (props) => {
    )
 }
 
-
+//Exportación de la función
 export default Cards;

@@ -7,4 +7,5 @@ const SearchBar = (props) => {
    );
 }
 
+//Exportación de la función
 export default SearchBar;
