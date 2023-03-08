@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../Fonts/shlop\ rg.otf');
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(1, 2fr); 
+  gap: 20px; 
+  transition-delay: 0ms;
+}
+

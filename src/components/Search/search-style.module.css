@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../Fonts/shlop\ rg.otf');
+}
+
+.buscador {
+ border: 2px solid #909090;
+ border-bottom: 2px solid #909090;
+ border-radius: 55px;
+ outline: black;
+ padding: 10px;
+ margin-top: 1px;
+ width: 25%;
+ position: relative;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ font-size: 25px; 
+ font-family: 'MyFont';
+ box-shadow: 0px 2px 9px black;
+}
+      
+.buscador:hover {
+  background-color: white /* rgba(255, 255, 255, 0.681) */;
+  color:  rgb(0, 0, 0);
+  font-size: 27px;
+  transition: 0.20s;
+  border: 3px solid #5c06f1a8;
+  border-bottom: 3px solid #5c06f1a8;
+}
+
+.agrega{
+  border: 2px solid #909090;
+  border-bottom: 2px solid #909090;
+  border-radius: 12px;
+  outline: black;
+  padding: 8px;
+  margin: 5px;
+  top: 6.9%;
+  margin-top: 1px;
+  width: 4%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 2px 9px black;
+}
+
+.agrega:hover {
+  background-color: #06f187a8;
+  color:  rgb(255, 255, 255);
+  transition: 0.20s;
+  border: 2px solid  #a221f2a8;
+  border-bottom: 2px solid #a221f2a8;
+}
