@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../Fonts/shlop\ rg.otf');
+  }
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
+.loginContain{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  padding: 30px 20px;
+  border-radius: 50px;
+  background-image: url('https://thumbs.gfycat.com/AlarmedInsistentGrayreefshark-size_restricted.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 0px 25px #2207f2a7;
+  z-index: 2;
+}
+
+.loginContain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    backdrop-filter: blur(20px) brightness(0.3);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .loginContain * {
+    position: relative;
+    z-index: 3;
+  }
+
+  .loginContain img {
+    top: 3.5em;
+    margin-bottom: 1.5em;
+    max-width: 290px; 
+    height: auto; 
+  }
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+  .usernameLabel{
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: white;
+    top: 1.7em;
+    margin-bottom: 1.2em;
+    width: 50%;
+    background-color: rgba(127, 255, 212, 0.256);
+    box-sizing: border-box;
+    font-family: 'MyFont';
+    font-size: 1.4em;
+  }
+  
+  .usernameLabel:hover {
+  border-top: 2px solid rgba(218, 255, 69, 0.652);;
+  border-bottom: 2px solid rgba(218, 255, 69, 0.652);
+  border-left: 2px solid rgba(218, 255, 69, 0.652);
+  border-right: 2px solid rgba(218, 255, 69, 0.652);
+  transition: 0.12s ease-in;
+}
+
+.user{
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    top: 1.2em;
+    margin-bottom: 1.2em;
+    width: 95%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.1em;  
+}
+
+.user:hover{
+  background-color: rgb(204, 204, 204);
+  font-size: 1.2em;
+  width: 99%;
+  transition: 0.3s ;
+  box-shadow: 0 0 5px rgb(20, 115, 230);
+  border-top: 2px solid rgb(20, 115, 230);
+  border-bottom: 2px solid rgb(20, 115, 230);
+  border-left: 2px solid rgb(20, 115, 230);
+  border-right: 2px solid rgb(20, 115, 230);
+  transition: 0.15s ease-in;
+}
+
+.passwordLabel{
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: white;
+    top: 0.7em;
+    margin-bottom: 0.2em;
+    width: 50%;
+    background-color: rgba(127, 255, 212, 0.256);
+    box-sizing: border-box;
+    font-family: 'MyFont';
+    font-size: 1.4em;
+}
+
+.passwordLabel:hover {
+    border-top: 2px solid rgba(218, 255, 69, 0.652);;
+    border-bottom: 2px solid rgba(218, 255, 69, 0.652);
+    border-left: 2px solid rgba(218, 255, 69, 0.652);
+    border-right: 2px solid rgba(218, 255, 69, 0.652);
+    transition: 0.12s ease-in;
+  }
+
+.pass{
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    top: 1.2em;
+    margin-bottom: 1.2em;
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.1em; 
+}
+
+.pass:hover{
+    background-color: rgb(204, 204, 204);
+    font-size: 1.2em;
+    width: 95%;
+    transition: 0.3s ;
+    box-shadow: 0 0 5px rgb(20, 115, 230);
+    border-top: 2px solid rgb(20, 115, 230);
+    border-bottom: 2px solid rgb(20, 115, 230);
+    border-left: 2px solid rgb(20, 115, 230);
+    border-right: 2px solid rgb(20, 115, 230);
+    transition: 0.15s ease-in;
+}
+
+
+  .bottomContainer {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.loginButton{
+    border: 2px solid #909090;
+    border-bottom: 2px solid #909090;
+    border-radius: 12px;
+    outline: black;
+    border-radius: 30px;
+    padding: 8px;
+    margin-top: 1.1em;
+    margin-bottom: 3.1em;
+    width: 125%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 2px 9px black;
+    font-family: 'MyFont';
+    font-size: 1.4em;
+    display: flex;
+  }
+  
+  .loginButton:hover {
+    background-color: #edfe03ef /* #06f187a8 */;
+    color:  rgb(0, 0, 0);
+    font-size: 1.6em;
+    transition: 0.6s;
+    border: 2px solid  #0ef1065f /* #a221f2a8 */;
+    border-bottom: 2px solid #0ef1065e /* #a221f2a8*/ ;
+  }
+
+.validacion{
+    font-family: 'Secular One', sans-serif;
+    font-size: smaller;
+    margin-top: 0.4em;
+    color: rgba(255, 32, 32, 0.639);
+}
+
+
