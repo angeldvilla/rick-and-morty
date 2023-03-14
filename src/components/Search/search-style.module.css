@@ -23,14 +23,14 @@
   text-align: center;
   box-shadow: 0px 2px 9px black;
   font-family: 'MyFont';
-  font-size: 19px;
+  font-size: 1.3em;
 }
       
 .buscador:hover {
   background-color: white /* rgba(255, 255, 255, 0.681) */;
   color:  rgb(0, 0, 0);
-  font-size: 19.4px;
-  transition: 0.10s;
+  transform: scale(1.02);
+  transition: 5ms;
   border: 3px solid #5c06f1a8;
   border-bottom: 3px solid #5c06f1a8;
 }
@@ -52,13 +52,14 @@
   text-align: center;
   box-shadow: 0px 2px 9px black;
   font-family: 'MyFont';
-  font-size: 19px;
+  font-size: 1.5em;
 }
 
 .agrega:hover {
   background-color: #edfe03ef /* #06f187a8 */;
   color:  rgb(0, 0, 0);
-  transition: 0.20s;
+  transform: scale(1.05);
+  transition: 0.20ms;
   border: 2px solid  #0ef1065f /* #a221f2a8 */;
   border-bottom: 2px solid #0ef1065e /* #a221f2a8*/ ;
 }

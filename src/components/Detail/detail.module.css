@@ -8,21 +8,19 @@
  .card {
     border-radius: 50px;
     box-shadow: 0 2px 10px #06f1b6a8;
-    background-image: url('https://w0.peakpx.com/wallpaper/1007/612/HD-wallpaper-rick-and-morty.jpg');
-    background-position: center;
+    background-image: url('https://media4.giphy.com/media/n5GXsYKoe1F3eFcRgq/giphy.gif');
+    /* https://w0.peakpx.com/wallpaper/1007/612/HD-wallpaper-rick-and-morty.jpg */
     background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
-    padding: 40px;
-    width: 750px;
-    height: 35em;
+    padding: 45px;
+    width: 770px;
+    height: 33em;
     top: 25%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     transition: 0.5s;
     z-index: 2;
-   
   }
 
   .card::before {
@@ -52,41 +50,39 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 1.1em;
+    font-size: 1.4em;
     z-index: 3;
 }
 
 .detail div{
-
     width: fit-content;
     margin-top: 1.5rem;
     padding-right: 0em;
-
-    
 }
 
 .container div h1{
     font-family: 'Shrikhand', cursive;
-    font-size: 2.1em;
-    right: 29.5%;
-    top: -1em;
+    font-size: 1.7em;
+    left: -29%;
+    right: 20.5%;
+    top: -0.9em;
     color: rgba(190, 190, 190, 0.992);
     text-shadow: 0 0 0.2rem #06f1b64a, 0 0 0.1rem #06f1b667 , 0 0 1rem #06f1b65b;
     z-index: 3;
 }
 
 .container div h1:hover{
-    transform: scale(1.15);
+    transform: scale(1.015);
     color: #e7e3e3;
     text-shadow: 0 0 0.2rem rgba(91, 237, 13, 0.186), 0 0 0.1rem rgba(89, 255, 0, 0.43), 0 0 1rem rgba(89, 255, 0, 0.43);
 }
 
 .container div label{
-    top: -3.7em;
+    top: -3.3em;
     width: fit-content;
     margin-left: 1.9rem;
     font-family: 'Shrikhand', cursive;
-    font-size: 1.9em;
+    font-size: 1.5em;
     color: rgba(190, 190, 190, 0.992);
     text-shadow: 0 0 0.2rem #06f1b64a, 0 0 0.1rem #06f1b667 , 0 0 1rem #06f1b65b;
     border-radius: 0.3rem;
@@ -105,12 +101,12 @@
     grid-gap: 10px;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 3.2em;
+    margin-right: 2.2em;
 }
 
 .titulos .estado{
     font-family: 'MyFont';
-    top: -3.8em;
+    top: -3.5em;
     color: #d2d0d0;
 }
  .titulos .estado:hover{
@@ -120,7 +116,7 @@
  }
 .titulos .origen{
     font-family: 'MyFont';
-    top: -3.8em;
+    top: -3.5em;
     color: #d2d0d0;
 }
 .titulos .origen:hover{
@@ -130,7 +126,7 @@
  }
 .titulos .genero{
     font-family: 'MyFont';
-    top: -3.8em;
+    top: -3.5em;
     color: #d2d0d0;
 }
 .titulos .genero:hover{
@@ -140,7 +136,7 @@
  }
 .titulos .especie{
     font-family: 'MyFont';
-    top: -3.8em;
+    top: -3.5em;
     color: #d2d0d0;
 }
 .titulos .especie:hover{
@@ -150,7 +146,7 @@
  }
 
 .containerImg{
-    top: -3.5em;
+    top: -1.4em;
     opacity: 0.8;
     display: flex;
     justify-content: center;
@@ -179,7 +175,7 @@
 .container div button{
     margin-left: 1rem;
     border-radius: 5rem;
-    top: -1.2em;
+    top: -1em;
     margin-bottom: 0;
     width: 6rem;
     height: 2.8rem;
