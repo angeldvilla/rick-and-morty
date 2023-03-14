@@ -1,4 +1,13 @@
 .nav{
     display: flex;
     justify-content: end;
+    background-color: rgba(212, 0, 255, 0.249);
+}
+
+.botones{
+    margin-left: -20.2em;
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    justify-content: start;
 }

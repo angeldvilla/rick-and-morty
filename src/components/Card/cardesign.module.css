@@ -41,13 +41,13 @@
   }
  .card:hover {
     margin-top: 1px;
-    scale: 1.1  1 1 ;
+    scale: 1.03 1.03;
     cursor: pointer;
-    box-shadow: 0 0 1rem rgba(81, 180, 110, 0.461), 0 0 4rem rgba(81, 180, 110, 0.461), 0 0 8rem rgba(81, 180, 110, 0.461);
+    box-shadow: 0 0 1rem rgba(81, 180, 110, 0.461), 0 0 2rem rgba(81, 180, 110, 0.461), 0 0 4rem rgba(81, 180, 110, 0.461);
  } 
 
  .card img {
-   top: 1.8em;
+    top: 1.8em;
     font-family: 'MyFont';
     box-shadow: 0 2px 8px #ffd000 ;
     border-radius: 60px;
@@ -73,7 +73,7 @@
 
   .card .name:hover{
     cursor: pointer;
-    transform: scale(1.3);
+    transform: scale(1.09);
     color: #ff69bbfb;
     text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461);
 }
@@ -93,7 +93,7 @@
   
   .card .species:hover{
     cursor: pointer;
-    transform: scale(1.3);
+    transform: scale(1.09);
     color: #8fffd0c6;
     text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461);
 }
@@ -113,7 +113,7 @@
 
   .card .gender:hover{
     cursor: pointer;
-    transform: scale(1.3);
+    transform: scale(1.09);
     color: #f44b2dea;
     text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461);
 }

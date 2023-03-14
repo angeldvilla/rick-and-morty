@@ -15,8 +15,9 @@
   outline: black;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
-  padding: 10px;
-  width: 60%;
+  margin-right: 0.5em;
+  padding: 12px;
+  width: 100%;
   position: relative;
   align-items: center;
   text-align: center;
@@ -43,7 +44,8 @@
   padding: 8px;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
-  width: 38%;
+  margin-right: 2.2em;
+  width: 80%;
   position: relative;
   justify-content: center;
   align-items: center;

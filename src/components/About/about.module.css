@@ -59,6 +59,7 @@
     font-family: 'MyFont';
     font-size: 3.6em;
     color: #fc4040;
+    transition: 0.6s;
   }
 
   .title:hover{

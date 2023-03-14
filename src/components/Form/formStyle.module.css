@@ -7,11 +7,11 @@
 
 .loginContain{
   position: absolute;
-  top: 50%;
+  top: 24%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 450px;
+  width: 580px;
+  height: 580px;
   padding: 30px 20px;
   border-radius: 50px;
   background-image: url('https://thumbs.gfycat.com/AlarmedInsistentGrayreefshark-size_restricted.gif');
@@ -45,9 +45,9 @@
   }
 
   .loginContain img {
-    top: 3.5em;
+    top: 1.5em;
     margin-bottom: 1.5em;
-    max-width: 290px; 
+    max-width: 500px; 
     height: auto; 
   }
 
@@ -86,7 +86,7 @@
     border: 1px solid #ccc;
     top: 1.2em;
     margin-bottom: 1.2em;
-    width: 95%;
+    width: 70%;
     text-align: center;
     box-sizing: border-box;
     font-family: 'Secular One', sans-serif;
@@ -96,7 +96,7 @@
 .user:hover{
   background-color: rgb(204, 204, 204);
   font-size: 1.2em;
-  width: 99%;
+  width: 75%;
   transition: 0.3s ;
   box-shadow: 0 0 5px rgb(20, 115, 230);
   border-top: 2px solid rgb(20, 115, 230);
@@ -134,7 +134,7 @@
     border: 1px solid #ccc;
     top: 1.2em;
     margin-bottom: 1.2em;
-    width: 90%;
+    width: 70%;
     text-align: center;
     box-sizing: border-box;
     font-family: 'Secular One', sans-serif;
@@ -144,7 +144,7 @@
 .pass:hover{
     background-color: rgb(204, 204, 204);
     font-size: 1.2em;
-    width: 95%;
+    width: 75%;
     transition: 0.3s ;
     box-shadow: 0 0 5px rgb(20, 115, 230);
     border-top: 2px solid rgb(20, 115, 230);
