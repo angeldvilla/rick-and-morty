@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../Fonts/shlop\ rg.otf');
+  }
+
+  .container{
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    margin: 1rem;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    grid-column-gap: .5rem;
+    grid-row-gap: 2rem;
+    justify-items: center;
+  }
+  
+  .card {
+      background-image: url('https://i.ytimg.com/vi/o_g_egzo-rU/maxresdefault.jpg');
+      border-radius: 50px;
+      box-shadow: 0 2px 10px #5c06f1a8 /* rgba(0, 0, 0, 0.2) */;
+      padding: 20px;
+      min-width: 14rem;
+      max-width: 14rem;
+      top: 18em;
+      left: 50%;
+      position: relative;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-family: 'MyFont';
+      transform: translate(-50%, -50%);
+      transition: 0.5s;
+      z-index: 2;
+     
+    }
+  
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50px;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(7px) brightness(0.2);
+      -webkit-backdrop-filter: blur(7px) brightness(0.2);
+    }
+  
+    .card * {
+      position: relative;
+      z-index: 3;
+    }
+   .card:hover {
+      margin-top: 1px;
+      scale: 1.03 1.03;
+      cursor: pointer;
+      box-shadow: 0 0 1rem rgba(81, 180, 110, 0.461), 0 0 2rem rgba(81, 180, 110, 0.461), 0 0 4rem rgba(81, 180, 110, 0.461);
+   } 
+  
+   .card img {
+      top: 1.8em;
+      font-family: 'MyFont';
+      box-shadow: 0 2px 1em #ffd000 ;
+      border-radius: 60px;
+      height: 200px;
+      width: 100%;
+      opacity: 0.6;
+      
+    }
+  
+    .card img:hover{
+      opacity: 1;
+      transform: scale(1.03);
+      filter: brightness(1.1);
+    }
+    
+    .link{
+      color: aliceblue;
+      text-decoration: none;
+  }
+  
+    .card .name {
+      top: 1rem;
+      font-family: 'MyFont';
+      font-size: 2.1em;
+      color: #f3e81fe7;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      transition: .8s;
+    }
+  
+    .card .name:hover{
+      cursor: pointer;
+      transform: scale(1.09);
+      color: #ff69bbfb;
+      text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461);
+  }
+   
+    .card .species {
+      display: flex;
+      flex-direction: column;
+      font-family: 'MyFont';
+      color: white;
+      top: 0.5rem;
+      font-size: 1.8rem;
+      height: 1rem;
+      align-items: center;
+      justify-content: center;
+      transition: .8s;
+    }
+    
+    .card .species:hover{
+      cursor: pointer;
+      transform: scale(1.09);
+      color: #8fffd0c6;
+      text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461);
+  }
+  
+    .card .gender {
+      display: flex;
+      flex-direction: column;
+      font-family: 'MyFont';
+      color: white;
+      top: 1.1rem;
+      font-size: 1.8rem;
+      height: 1rem;
+      align-items: center;
+      justify-content: center;
+      transition: .8s;
+    }
+  
+    .card .gender:hover{
+      cursor: pointer;
+      transform: scale(1.09);
+      color: #f44b2dea;
+      text-shadow: 0 0 .2rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461);
+  }
+  
+    .boton {
+      background-color: transparent;
+      border: none;
+      color: #fffdfd;
+      cursor: pointer;
+      position: absolute;
+      right: 26px;
+      top: 10px;
+      padding: 5px;
+    }
+    
+    .card .boton:hover {
+      background-color: rgb(226, 43, 43);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+    }

@@ -4,6 +4,7 @@ import About from './components/About/About'
 import Detail from './components/Detail/Detail'
 import Form from './components/Form/Form'
 import Error from './components/Error404/Error'
+import Favorites from './components/Favorites/Favorites'
 import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 
@@ -55,7 +56,7 @@ function App () {
   return (
     <div className='App' style={{ padding: '25px', alignItems: 'center', textAlign: 'center' }}>
         
-        {location.pathname.includes('/home') || location.pathname.includes('/about') ? <NavBar onSearch={onSearch}/> : null}
+        {location.pathname.includes('/home') || location.pathname.includes('/about') || location.pathname.includes('/favorites') ? <NavBar onSearch={onSearch}/> : null}
 
       <div style={{fdirection: 'row' }}>
       
@@ -70,6 +71,7 @@ function App () {
             characters={characters} />
           } 
           />
+          <Route path='/favorites' element={<Favorites  />}/>
           <Route path='/about' element={<About />} />
           <Route path='/detail/:detailId' element={<Detail />} />
         </Routes>
