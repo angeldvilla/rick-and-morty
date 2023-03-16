@@ -42,14 +42,15 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
             cancel</span></button>
      
              <img src={image} alt={name} />
+             
+               <h2 className={styles.name}>{name}</h2>
+               <h2 className={styles.species}>{species}</h2>
+               <h2 className={styles.gender}>{gender}</h2> <br/><hr/>
             
                <Link to={`/detail/${id}`} className={styles.link} >
-                  <h2 className={styles.name}>{name}</h2>
+                  <h2 className={styles.gender}>Details</h2>
                </Link>
-            
-
-               <h2 className={styles.species}>{species}</h2>
-               <h2 className={styles.gender}>{gender}</h2>
+               
 
          </div>
    );

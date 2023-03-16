@@ -61,6 +61,8 @@ const Detail = () => {
               </div>
 
               <div className={style.titulos}>
+              <label htmlFor="status" >ID: </label>
+                <p className={style.id}>{character?.id}</p>
                 <label htmlFor="status" >Status: </label>
                 <p className={style.estado}>{character?.status}</p>
                 <label htmlFor="specie">Specie: </label>

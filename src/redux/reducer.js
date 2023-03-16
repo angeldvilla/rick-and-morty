@@ -1,7 +1,8 @@
-import { ADD_FAVORITES, REMOVE_FAVORITES, REMOVE_FAVORITE_CHARACTER } from "./types";
+import { ADD_FAVORITES, REMOVE_FAVORITES, REMOVE_FAVORITE_CHARACTER, FILTER, ORDER } from "./types";
 
 const initialState = {
   myFavorites: [],
+  allCharacters : [],
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -10,6 +11,8 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         myFavorites: [...state.myFavorites, action.payload],
+
+        allCharacters: [...state.allCharacters, action.payload],
       };
 
     case REMOVE_FAVORITES:
@@ -18,15 +21,56 @@ const rootReducer = (state = initialState, action) => {
         myFavorites: state.myFavorites.filter((char) => char.id !== action.payload),
       };
 
+
     case REMOVE_FAVORITE_CHARACTER:
       return {
         ...state,
         myFavorites: state.myFavorites.filter((favorite) => favorite.id !== action.payload),
       };
 
-    default:
-      return { ...state };
-  }
-};
+      case FILTER :
+        let charactersFilters;
+        if (action.payload === "All") {
+          return {
+            ...state,
+            myFavorites: state.allCharacters,
+          };
+        } else {
+          charactersFilters = state.allCharacters.filter((character) => character.gender === action.payload);
+        }
+      return{
+        ...state,
+       myFavorites: charactersFilters,
+      };
+
+      //CON TERNARIOS 
+      /*case FILTER:
+       const charactersFilters = action.payload === "All" ? state.allCharacters : state.allCharacters.filter((character) => character.gender === action.payload);
+      return {
+        ...state,
+        myFavorites: charactersFilters,
+      }; */
+
+
+      case ORDER : 
+      const charactersOrdeneds = [...state.myFavorites].sort((asc, des) => {
+        if(action.payload === "Upward"){
+          return asc.id - des.id
+        } else if(action.payload === "Falling"){
+        return des.id - asc.id
+        } else {
+          return 0;
+        }
+      })
+
+      return {
+        ...state,
+        myFavorites: charactersOrdeneds,
+      }
+      
+      default:
+        return { ...state };
+    };
+  };
 
 export default rootReducer;
