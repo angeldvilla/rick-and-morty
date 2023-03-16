@@ -12,7 +12,6 @@ function App () {
   const location = useLocation();
   const navigate = useNavigate();
    const [characters, setCharacters] = useState([]);
-   
    const [access, setAccess] = useState(false);
    
    const username = "escarlata.2003@gmail.com";
@@ -52,6 +51,8 @@ function App () {
         characters.filter(character => character.id !== id)
       )
     }
+    
+  
 
   return (
     <div className='App' style={{ padding: '25px', alignItems: 'center', textAlign: 'center' }}>
@@ -71,7 +72,7 @@ function App () {
             characters={characters} />
           } 
           />
-          <Route path='/favorites' element={<Favorites  />}/>
+          <Route path='/favorites' element={<Favorites />}/>
           <Route path='/about' element={<About />} />
           <Route path='/detail/:detailId' element={<Detail />} />
         </Routes>

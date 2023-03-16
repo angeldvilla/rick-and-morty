@@ -9,7 +9,7 @@ const Favorites = () => {
         {
             myFavorites.map((character) => {
                 return(
-                    <div className={styles.card} >
+                    <div className={styles.card} key={character.id} >
                     
                       <img src={character.image} alt={character.name} />
                      
@@ -31,17 +31,3 @@ const Favorites = () => {
 }
 
 export default Favorites;
-
-
-
-
-
-//---------
- /*  <Card
-                    key= {character.id}
-                    name = {character.name}
-                    species = {character.species}
-                    gender = {character.gender}
-                    image = {character.image}
-                    id = {character.id}
-                    /> */

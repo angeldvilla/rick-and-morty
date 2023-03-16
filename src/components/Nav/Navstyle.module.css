@@ -39,7 +39,6 @@
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.5em;
     color: #4d1bd5;
-    box-shadow: 0 0 .5em #1b65d5;
     text-decoration: none;
   }
   
@@ -47,7 +46,9 @@
   .about:hover,
   .logout:hover {
     color: #b76fd3;
-    box-shadow: 0 0 .5em #1b65d5;
+    box-shadow: 0 0 0em #1b65d5;
+    /* text-shadow: 1px 1px 0px rgba(0,0,0,0.3); */
+
   }
   
   .logout {

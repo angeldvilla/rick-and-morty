@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { addFavorites, removeFavorites } from '../../redux/action';
+import { addFavorites, removeFavorites, removeFavoriteCharacter} from '../../redux/action';
 
-const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFavorites}) => {
-    const [isFav, setisFav] = useState(false);
+const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFavorites, removeFavoriteCharacter}) => {
+   const [isFav, setisFav] = useState(false);
    const favorites = useSelector(state => state.myFavorites);
-
+   
    useEffect(() => {
       favorites.forEach((fav) => {
          if (fav.id === id) {
@@ -16,18 +16,19 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
          }
       });
    }, [favorites]);
-
-    const handleFavorite = () => {
+   
+   
+   const handleFavorite = () => {
       if(isFav) {
          setisFav(false);
          removeFavorites(id);
       }
       else{   
-      setisFav(true)
-      addFavorites({id, name, species, gender, image, addFavorites, removeFavorites})
-      } 
-    }
-
+         setisFav(true)
+         addFavorites({id, name, species, gender, image})
+      }
+   }
+   
    return (
       <div className={styles.card} >
            { isFav ? (
@@ -36,8 +37,8 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
                <button onClick={handleFavorite}>🤍</button>
             )
                }
-            <button className={styles.boton} onClick={onClose}> 
-            <span class="material-symbols-outlined">
+            <button className={styles.boton} onClick={() => {onClose();removeFavoriteCharacter(id)}} > 
+            <span className="material-symbols-outlined">
             cancel</span></button>
      
              <img src={image} alt={name} />
@@ -61,7 +62,10 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
          },
          removeFavorites : (id) => {
          dispatch(removeFavorites(id));
-      }
+      },
+         removeFavoriteCharacter: (id) => {
+         dispatch(removeFavoriteCharacter(id));
+     }
     }
 }
 
