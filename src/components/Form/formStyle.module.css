@@ -46,110 +46,87 @@
 
   .loginContain img {
     top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     max-width: 500px; 
     height: auto; 
   }
 
 .topContainer {
+  top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
   }
-  
-  .usernameLabel{
-    padding: 8px 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    color: white;
-    top: 1.7em;
-    margin-bottom: 1.2em;
-    width: 50%;
-    background-color: rgba(127, 255, 212, 0.256);
-    box-sizing: border-box;
-    font-family: 'MyFont';
-    font-size: 1.4em;
-  }
-  
-  .usernameLabel:hover {
-  border-top: 2px solid rgba(218, 255, 69, 0.652);;
-  border-bottom: 2px solid rgba(218, 255, 69, 0.652);
-  border-left: 2px solid rgba(218, 255, 69, 0.652);
-  border-right: 2px solid rgba(218, 255, 69, 0.652);
-  transition: 0.12s ease-in;
+
+.topContainer input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  top: 1.2em;
+  margin-bottom: 1.2em;
+  width: 63%;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Secular One', sans-serif;
+  font-size: 1.1em; 
+  border-bottom: 2px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
 }
 
-.user{
-    padding: 8px 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    top: 1.2em;
-    margin-bottom: 1.2em;
-    width: 63%;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: 'Secular One', sans-serif;
-    font-size: 1.1em;  
+.topContainer input:focus {
+  outline: none;
+  border-color: #007bff;
 }
 
-.user:hover{
-  background-color: rgb(204, 204, 204);
-  transform: scale(1.02);
-  box-shadow: 0 0 5px rgb(20, 115, 230);
-  border-top: 2px solid rgb(20, 115, 230);
-  border-bottom: 2px solid rgb(20, 115, 230);
-  border-left: 2px solid rgb(20, 115, 230);
-  border-right: 2px solid rgb(20, 115, 230);
-  transition: 0.15s ease-in;
+.topContainer .border {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #007bff;
+  transition: width 0.5s ease-in-out;
+}
+
+.usernameLabel{
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  color: white;
+  top: 1.7em;
+  margin-bottom: 1.2em;
+  width: 50%;
+  background-color: rgba(127, 255, 212, 0.256);
+  box-sizing: border-box;
+  font-family: 'MyFont';
+  font-size: 1.4em;
+}
+
+.usernameLabel:hover {
+  outline: none;
+  border-color: rgba(218, 255, 69, 0.652);
+  transition: 0.15s ease;
 }
 
 .passwordLabel{
-    padding: 8px 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    color: white;
-    top: 0.7em;
-    margin-bottom: 0.2em;
-    width: 50%;
-    background-color: rgba(127, 255, 212, 0.256);
-    box-sizing: border-box;
-    font-family: 'MyFont';
-    font-size: 1.4em;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  color: white;
+  top: 1.7em;
+  margin-bottom: 1.2em;
+  width: 50%;
+  background-color: rgba(127, 255, 212, 0.256);
+  box-sizing: border-box;
+  font-family: 'MyFont';
+  font-size: 1.4em;
 }
 
 .passwordLabel:hover {
-    border-top: 2px solid rgba(218, 255, 69, 0.652);;
-    border-bottom: 2px solid rgba(218, 255, 69, 0.652);
-    border-left: 2px solid rgba(218, 255, 69, 0.652);
-    border-right: 2px solid rgba(218, 255, 69, 0.652);
-    transition: 0.12s ease-in;
-  }
-
-.pass{
-    padding: 8px 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    top: 1.2em;
-    margin-bottom: 1.2em;
-    width: 63%;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: 'Secular One', sans-serif;
-    font-size: 1.1em; 
+  outline: none;
+  border-color: rgba(218, 255, 69, 0.652);
+  transition: 0.15s ease;
 }
-
-.pass:hover{
-    background-color: rgb(204, 204, 204);
-    transform: scale(1.02);
-    box-shadow: 0 0 5px rgb(20, 115, 230);
-    border-top: 2px solid rgb(20, 115, 230);
-    border-bottom: 2px solid rgb(20, 115, 230);
-    border-left: 2px solid rgb(20, 115, 230);
-    border-right: 2px solid rgb(20, 115, 230);
-    transition: 0.15s ease-in;
-}
-
 
   .bottomContainer {
     margin-top: 0.1em;
@@ -191,7 +168,7 @@
 .validacion{
     font-family: 'Secular One', sans-serif;
     font-size: 0.9em;
-    margin-top: 0.4em;
+    margin-top: 0.3em;
     color: rgba(255, 32, 32, 0.639);
 }
 

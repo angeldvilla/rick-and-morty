@@ -48,7 +48,7 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
                <h2 className={styles.gender}>{gender}</h2> <br/><hr/>
             
                <Link to={`/detail/${id}`} className={styles.link} >
-                  <h2 className={styles.gender}>Details</h2>
+                  <h2 className={styles.details}>Details</h2>
                </Link>
                
 

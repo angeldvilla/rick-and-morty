@@ -59,6 +59,8 @@ function App () {
         
         {location.pathname.includes('/home') || location.pathname.includes('/about') || location.pathname.includes('/favorites') ? <NavBar onSearch={onSearch}/> : null}
 
+        {location.pathname.includes('') || location.pathname.includes('/detail/:detailId') ? null : <Error/>}
+
       <div style={{fdirection: 'row' }}>
       
       <Routes>

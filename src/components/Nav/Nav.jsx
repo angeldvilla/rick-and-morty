@@ -1,7 +1,8 @@
 import React from "react";
 import SearchBar from "../Search/SearchBar";
 import Navstyle from './Navstyle.module.css'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 const NavBar = ({onSearch}) => {
     return (
@@ -14,10 +15,31 @@ const NavBar = ({onSearch}) => {
 
         <div className={Navstyle.botones}>
           <div className={Navstyle.links}>
-            <Link to='home' className={Navstyle.home}>HOME</Link>
-            <Link to='favorites' className={Navstyle.logout}>FAVORITES</Link>
-            <Link to='about' className={Navstyle.about}>ABOUT</Link>
-            <Link to='/' className={Navstyle.logout}>LOGOUT</Link>
+          <NavLink to='/home' className={({isActive}) => isActive ? Navstyle.active : Navstyle.home}>
+          <span class="material-symbols-outlined">
+              home
+              </span> HOME
+            </NavLink>
+           
+            <NavLink to='/favorites' className={({isActive}) => isActive ? Navstyle.active : Navstyle.favorites}>
+            <span class="material-symbols-outlined">
+              star
+              </span> FAVORITES
+            </NavLink>
+
+            <NavLink to='/about' className={({isActive}) => isActive ? Navstyle.active : Navstyle.about}>
+            <span class="material-symbols-outlined">
+            view_comfy_alt
+            </span> ABOUT
+            </NavLink>
+
+
+             <NavLink to='/' className={({isActive}) => isActive ? Navstyle.active : Navstyle.logout}>
+            <span class="material-symbols-outlined">
+              logout
+              </span> LOGOUT
+            </NavLink>
+
           </div>
         </div>
         <SearchBar onSearch={onSearch}/>

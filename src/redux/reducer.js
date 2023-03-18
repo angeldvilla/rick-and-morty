@@ -26,6 +26,7 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         myFavorites: state.myFavorites.filter((favorite) => favorite.id !== action.payload),
+        allCharacters: state.allCharacters.filter((personaje) => personaje.id !== action.payload),
       };
 
       case FILTER :
@@ -39,7 +40,7 @@ const rootReducer = (state = initialState, action) => {
           charactersFilters = state.allCharacters.filter((character) => character.gender === action.payload);
         }
       return{
-        ...state,
+      ...state,
        myFavorites: charactersFilters,
       };
 
@@ -69,7 +70,7 @@ const rootReducer = (state = initialState, action) => {
       }
       
       default:
-        return { ...state };
+        return {...state};
     };
   };
 

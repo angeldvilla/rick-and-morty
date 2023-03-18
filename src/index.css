@@ -10,8 +10,9 @@ body {
   url('https://steamuserimages-a.akamaihd.net/ugc/1714169669744769658/F652EC51D44D6D8B739973059761498D73EC5944/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
   /* url('https://media.tenor.com/ES2gLiFcLsEAAAAM/rick-and-morty-morty.gif'); */
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y, repeat-x;
   backdrop-filter: blur(15px) brightness(0.5);
+  overflow: auto;
   height: 100vw;
 }
 

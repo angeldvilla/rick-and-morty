@@ -42,7 +42,7 @@ const handleInputChange = (event) => {
             <label htmlFor='username' className={style.usernameLabel}>
               USERNAME:
             </label>
-            <input className={style.user}
+            <input
             autoComplete="off"
               type='text'
               name='username'
@@ -55,11 +55,11 @@ const handleInputChange = (event) => {
             <label htmlFor='password' className={style.passwordLabel}>
               PASSWORD:
             </label>
-            <input className={style.pass}
+            <input
              autoComplete="off"
               type='password'
               name='password'
-              placeholder='password...'
+              placeholder='.......'
               value={userData.password}
               onChange={handleInputChange}
             />
