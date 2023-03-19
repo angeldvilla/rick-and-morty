@@ -22,18 +22,18 @@ const Favorites = () => {
                 <h2 className={styles.titleFav}>YOUR FAVORITES CARDS!</h2>
                 </div> */}
                 <select className={styles.select} onChange={handleOrder}>
-                <option value="order" disabled='disabled' >Order By</option>
-                <option value="Upward" >Upward</option>
-                <option value="Falling" >Falling</option>
+                <option value="order" disabled='disabled' style={{color:'grey'}}>Order By</option>
+                <option value="Upward" style={{color:'black'}} >Upward</option>
+                <option value="Falling" style={{color:'black'}} >Falling</option>
                 </select>
 
                 <select className={styles.filter} onChange={handleFilter}>
-                <option value="filter" disabled='disabled' >Filter By</option>
-                <option value="All">All</option>
-               <option value="Male">Male</option>
-               <option value="Female">Female</option>
-               <option value="Genderless">Genderless</option>
-               <option value="unknown">unknown</option>
+                <option value="filter" disabled='disabled' style={{color:'grey'}}>Filter By</option>
+                <option value="All" style={{color:'black'}} >All</option>
+               <option value="Male" style={{color:'black'}} >Male</option>
+               <option value="Female" style={{color:'black'}} >Female</option>
+               <option value="Genderless" style={{color:'black'}} >Genderless</option>
+               <option value="unknown" style={{color:'black'}} >unknown</option>
                 </select>
 
              <div className={styles.container}>

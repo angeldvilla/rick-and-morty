@@ -32,9 +32,13 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
    return (
       <div className={styles.card} >
            { isFav ? (
-               <button onClick={handleFavorite}>❤️</button>
+               <button className={styles.fav} onClick={handleFavorite}><span class="material-symbols-outlined" style={{color:'red'}}>
+               favorite 
+               </span>{/* ❤️ */}</button>
             ) : (
-               <button onClick={handleFavorite}>🤍</button>
+               <button className={styles.fav} onClick={handleFavorite}><span class="material-symbols-outlined" style={{color:'white'}}>
+               favorite
+               </span>{/* 🤍 */}</button>
             )
                }
             <button className={styles.boton} onClick={() => {onClose();removeFavoriteCharacter(id)}} > 

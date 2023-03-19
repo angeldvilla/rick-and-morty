@@ -168,3 +168,25 @@
     border-radius: 50%;
     display: flex;
   }
+
+  .fav {
+    background-color: transparent;
+    border: none;
+    color: #fffdfd;
+    cursor: pointer;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    padding: 5px;
+  }
+
+  .card .fav:hover {
+    background-color: rgb(135, 135, 135);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  span .material-symbols-outlined{
+    color: red;
+  }

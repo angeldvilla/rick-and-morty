@@ -11,7 +11,7 @@ body {
   /* url('https://media.tenor.com/ES2gLiFcLsEAAAAM/rick-and-morty-morty.gif'); */
   background-size: cover;
   background-repeat: repeat-y, repeat-x;
-  backdrop-filter: blur(15px) brightness(0.5);
+  backdrop-filter: blur(30px) brightness(0.5);
   overflow: auto;
   height: 100vw;
 }
