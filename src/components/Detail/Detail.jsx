@@ -2,12 +2,20 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom"
 import style from './detail.module.css'
+import swal from 'sweetalert';
 
 
 const Detail = () => {
     const { detailId } = useParams();
 
     const [character, setCharacter] = useState({}); 
+
+    const showErrorAlert = () => {
+      swal({
+        title: "No hay personajes con ese ID",
+        icon: "warning",
+      });
+    };
 
     useEffect(() => {
         const URL_BASE = "https://be-a-rym.up.railway.app/api";
@@ -19,31 +27,13 @@ const Detail = () => {
             if (char.name) {
               setCharacter(char);
             } else {
-              window.alert("No hay personajes con ese ID");
+                showErrorAlert();
             }
           })
-          .catch((err) => {
-            window.alert("No hay personajes con ese ID");
-          });
+         
         return setCharacter({});
       }, [detailId]);
 
-   /*  return (
-        <div>
-            <button>
-            <Link to='/home'>Home
-            </Link> 
-            </button>   
-            <br/>
-            <img src={character.image} alt="" />
-            <p>{character?.name}</p>
-            <p>{character?.species}</p>
-            <p>{character?.gender}</p>
-            <p>{character?.status}</p>
-            <p>{character?.origin?.name}</p>
-
-        </div>
-    ) */
     return(
       <div className={style.container} >
         <div className={style.card}>

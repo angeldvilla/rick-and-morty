@@ -7,6 +7,8 @@ import Error from './components/Error404/Error'
 import Favorites from './components/Favorites/Favorites'
 import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
+import swal from 'sweetalert'
+import Swal from 'sweetalert2'
 
 function App () {
   const location = useLocation();
@@ -29,6 +31,17 @@ function App () {
     !access && navigate('/');
    }, [access]);
     
+
+
+   const showErrorAlert = () => {
+    swal({
+      title: "No hay personajes con ese ID",
+      icon: "warning",
+      customClass: {
+        container: "my-swal",
+      },
+    });
+  };
     
     const onSearch = (newCharacter) => {
     const URL_BASE = "https://be-a-rym.up.railway.app/api";
@@ -40,17 +53,38 @@ function App () {
          if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);
          } else {
-            window.alert('No hay personajes con ese ID');
+            /* window.alert('No hay personajes con ese ID'); */
+            showErrorAlert();
          }
       });
         
     }
 
-    const onClose = (id) => {
+    /* const onClose = (id) => {
       setCharacters(
         characters.filter(character => character.id !== id)
       )
-    }
+   } */
+
+   const onClose = (id) => {
+    swal({
+      title: "¿Estás seguro?",
+      text: "Una vez eliminado, no podrás recuperar este personaje.",
+      icon: "warning",
+      buttons: ["Cancelar", "Eliminar"],
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        setCharacters(characters.filter((character) => character.id !== id));
+        swal("El personaje ha sido eliminado!", {
+          icon: "success",
+        });
+      } else {
+        swal("El personaje no ha sido eliminado.");
+      }
+    });
+  };
     
   
 
