@@ -1,5 +1,5 @@
-import styles from './search-style.module.css'
 import { useState } from 'react';
+import styles from './search-style.module.css'
 
 const SearchBar = ({onSearch}) => {
    const [character, setCharacter] = useState('');
@@ -8,14 +8,11 @@ const SearchBar = ({onSearch}) => {
       setCharacter(event.target.value);
    }
 
+  
    return (
       <div className={styles.search}>
-       <input className={styles.buscador} type='search' placeholder='CHARACTER...' value={character} onChange={handleChange} />
-      <button className={styles.agrega} onClick={() => onSearch(character)} >ADD
-         {/* <span class="material-symbols-outlined">
-         search
-         </span> */}
-      </button> 
+       <input className={styles.buscador} type='search' placeholder='CHARACTER...' value={character} onChange={handleChange}  />
+      <button className={styles.agrega} onClick={() => onSearch(character, setCharacter(''))}>ADD</button> 
     
       </div>
    );

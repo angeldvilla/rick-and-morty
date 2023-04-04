@@ -1,4 +1,4 @@
-import { ADD_FAVORITES, REMOVE_FAVORITES, REMOVE_FAVORITE_CHARACTER, FILTER, ORDER } from "./types";
+import { ADD_FAVORITES, REMOVE_FAVORITES, REMOVE_FAVORITE_CHARACTER, FILTER, ORDER, SHOW_ALERT } from "./types";
 
 
 export const addFavorites = (character) =>{
@@ -37,3 +37,8 @@ export const orderCards  = (id) => {
     payload : id,
   };
 }
+
+/* export const showAlert = (message) => ({
+  type: SHOW_ALERT,
+  payload: message,
+}); */

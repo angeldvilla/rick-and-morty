@@ -1,4 +1,4 @@
-import { ADD_FAVORITES, REMOVE_FAVORITES, REMOVE_FAVORITE_CHARACTER, FILTER, ORDER } from "./types";
+import { ADD_FAVORITES, REMOVE_FAVORITES, REMOVE_FAVORITE_CHARACTER, FILTER, ORDER, SHOW_ALERT } from "./types";
 
 const initialState = {
   myFavorites: [],
@@ -68,6 +68,13 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         myFavorites: charactersOrdeneds,
       }
+
+     /*  case SHOW_ALERT : 
+      return {
+        ...state,
+        showAlert: true,
+        alertMessage: action.payload
+      }; */
       
       default:
         return {...state};

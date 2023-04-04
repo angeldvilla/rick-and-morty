@@ -1,3 +1,4 @@
+/* COMPONENTES */
 import Cards from './components/Cards/Cards'
 import NavBar from './components/Nav/Nav'
 import About from './components/About/About'
@@ -5,10 +6,14 @@ import Detail from './components/Detail/Detail'
 import Form from './components/Form/Form'
 import Error from './components/Error404/Error'
 import Favorites from './components/Favorites/Favorites'
+/* ------ */
+
+
+/* HOOKS */
 import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import swal from 'sweetalert'
-import Swal from 'sweetalert2'
+/* ------ */
 
 function App () {
   const location = useLocation();
@@ -40,6 +45,7 @@ function App () {
       customClass: {
         container: "my-swal",
       },
+      position: "center",
     });
   };
     
@@ -53,18 +59,11 @@ function App () {
          if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);
          } else {
-            /* window.alert('No hay personajes con ese ID'); */
-            showErrorAlert();
+          showErrorAlert();
          }
       });
         
     }
-
-    /* const onClose = (id) => {
-      setCharacters(
-        characters.filter(character => character.id !== id)
-      )
-   } */
 
    const onClose = (id) => {
     swal({

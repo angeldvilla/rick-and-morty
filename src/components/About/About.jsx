@@ -14,7 +14,7 @@ import style from './about.module.css';
                     </div>
                     
                     <div className={style.linkedin}>
-                    <a href="https://www.linkedin.com/in/angeldavidvilla" target="_blank"><i className={`fab fa-linkedin ${style.icon}`} /> Linkedin</a>
+                    <a href="https://www.linkedin.com/in/angel-david-villa-luj%C3%A1n-396634255/" target="_blank"><i className={`fab fa-linkedin ${style.icon}`} /> Linkedin</a>
                     </div>
                     <div className={style.insta}>
                     <a href="https://www.instagram.com/_angeldvilla_/" target="_blank"><i className={`fab fa-instagram ${style.icon}`} /> Instagram</a>
