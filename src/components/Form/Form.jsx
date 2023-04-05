@@ -43,7 +43,7 @@ const handleInputChange = (event) => {
               USERNAME:
             </label>
             <input
-            autoComplete="off"
+              autoComplete="off"
               type='text'
               name='username'
               placeholder='hello@example.com'

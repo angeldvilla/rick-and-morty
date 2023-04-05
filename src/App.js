@@ -90,21 +90,19 @@ function App () {
   return (
     <div className='App' style={{ padding: '25px', alignItems: 'center', textAlign: 'center' }}>
         
-        {location.pathname.includes('/home') || location.pathname.includes('/about') || location.pathname.includes('/favorites') ? <NavBar onSearch={onSearch}/> : null}
-
-        {location.pathname.includes('') || location.pathname.includes('/detail/:detailId') ? null : <Error/>}
+        { location.pathname.includes('/') ? null : <Nav onSearch={onSearch}/>  }
 
       <div style={{fdirection: 'row' }}>
       
       <Routes>
-        <Route path='/*' element={<Error/>} />
+        <Route path='/:error404' element={<Error/>} />
         <Route path='/' element={<Form login={login} />} />
           <Route path='/home'
            element=
           {
           <Cards 
           onClose={onClose}
-            characters={characters} />
+          characters={characters} />
           } 
           />
           <Route path='/favorites' element={<Favorites />}/>
