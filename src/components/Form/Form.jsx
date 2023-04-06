@@ -66,7 +66,6 @@ const handleInputChange = (event) => {
             {errors.password && <p className={style.validacion}>{errors.password}</p>}
           <div className={style.bottomContainer}>
             <button className={style.loginButton}>LOGIN</button>
-            {/* <p className={style.loginMessage}>Please log in to continue</p> */}
           </div>
           </div>
         </form>
