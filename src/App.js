@@ -121,14 +121,15 @@ function App () {
       { location.pathname === '/' || location.pathname.includes('detail') ? null : <NavBar onSearch={onSearch} />  }
   
       <div style={{flexDirection: 'row' }}>
-     
+      
+      <br/><br/><br/><br/><br/>
+      <div className={styles.card}>
      { location.pathname === '/home' ? 
-            (<button className={styles.boton} onClick={randomCharacter}> 
-            <br/><br/><br/><br/>
+            (<button className={styles.boton} onClick={randomCharacter}>
             RANDOM CHARACTHER
             </button>) 
             : null}
-      
+      </div>
       <Routes>
         
         <Route path='/' element={<Form login={login}/> }/>
