@@ -1,10 +1,18 @@
 import React from "react";
 import SearchBar from "../Search/SearchBar";
 import Navstyle from './Navstyle.module.css'
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 
 const NavBar = ({onSearch}) => {
+
+/*   const location = useLocation();
+
+  const randomCharacter = () => {
+    const idRandom = Math.floor(Math.random() * 826);
+    onSearch(idRandom);
+ } */
+
     return (
         <nav className={Navstyle.nav}>
           
@@ -20,6 +28,10 @@ const NavBar = ({onSearch}) => {
               home
               </span> HOME
             </NavLink>
+            
+           {/*  { location.pathname === '/home' ? 
+            (<button className={Navstyle.home} onClick={randomCharacter}>RANDOM CHARACTHER</button>) 
+            : null} */}
            
             <NavLink to='/favorites' className={({isActive}) => isActive ? Navstyle.active : Navstyle.favorites}>
             <span class="material-symbols-outlined">
