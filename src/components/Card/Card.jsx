@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { addFavorites, removeFavorites, removeFavoriteCharacter} from '../../redux/action';
 
-const Card = ({onSearch, id, name, species, gender, image, onClose, addFavorites, removeFavorites, removeFavoriteCharacter}) => 
+const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFavorites, removeFavoriteCharacter}) => 
 {
    const [isFav, setisFav] = useState(false);
    const favorites = useSelector(state => state.myFavorites);
@@ -30,10 +30,10 @@ const Card = ({onSearch, id, name, species, gender, image, onClose, addFavorites
       }
    }
 
-   const randomCharacter = () => {
+   /* const randomCharacter = () => {
       const idRandom = Math.floor(Math.random() * 826);
       onSearch(idRandom);
-   }
+   } */
    
    return (
       <div className={styles.card} >
