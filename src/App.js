@@ -122,13 +122,22 @@ function App () {
   
       <div style={{flexDirection: 'row' }}>
       
-      <br/><br/><br/><br/><br/>
-      <div className={styles.card}>
-     { location.pathname === '/home' ? 
-            (<button className={styles.boton} onClick={randomCharacter}>
-            RANDOM CHARACTHER
-            </button>) 
-            : null}
+      
+      <div>
+      <br/><br/><br/><br/>
+      {location.pathname ==='/' || location.pathname !== '/home' || 
+       location.pathname === '/favorites' || 
+       location.pathname === '/detail/:`${id}`' || location.pathname !== '/about' && (
+        <button className={styles.randomChar} onClick={randomCharacter}>RANDOM CHAR
+          {/* <svg viewBox="0 0 24 24" style={{ width: '1.5em', height: '1.5em', marginRight: '0.5em' }}>
+            <path fill="currentColor" d="M12 2.2l2.928 6.167 6.535.953-4.734 4.741 1.115 6.522L12 17.222l-5.845 3.161 1.115-6.522L2.537 9.32l6.535-.953z"></path>
+          </svg> */}<span class="material-symbols-outlined" style={{ width: '1.3em', height: '1.5em', 
+          marginRight: '-0.2em', marginLeft: '0.1em' }}>
+          shuffle
+          </span>
+           </button> 
+  
+            )}
       </div>
       <Routes>
         

@@ -23,31 +23,34 @@ const NavBar = ({onSearch}) => {
 
         <div className={Navstyle.botones}>
           <div className={Navstyle.links}>
+          
           <NavLink to='/home' className={({isActive}) => isActive ? Navstyle.active : Navstyle.home}>
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined" style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '2.3em' }}>
               home
-              </span> HOME
+              </span> 
+              HOME
             </NavLink>
-            
-           {/*  { location.pathname === '/home' ? 
+          
+            {/* { location.pathname === '/home' ? 
             (<button className={Navstyle.home} onClick={randomCharacter}>RANDOM CHARACTHER</button>) 
             : null} */}
            
-            <NavLink to='/favorites' className={({isActive}) => isActive ? Navstyle.active : Navstyle.favorites}>
-            <span class="material-symbols-outlined">
-              star
-              </span> FAVORITES
-            </NavLink>
-
+          <NavLink to='/favorites' className={({isActive}) => isActive ? Navstyle.active : Navstyle.favorites}>
+            <svg viewBox="0 0 25 25" style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '1.9em' }}>
+            <path fill="currentColor" d="M12 2.2l2.928 6.167 6.535.953-4.734 4.741 1.115 6.522L12 17.222l-5.845 3.161 1.115-6.522L2.537 9.32l6.535-.953z"></path>
+            </svg>
+            FAVORITES
+          </NavLink>
+      
             <NavLink to='/about' className={({isActive}) => isActive ? Navstyle.active : Navstyle.about}>
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '2.3em' }}>
             view_comfy_alt
             </span> ABOUT
             </NavLink>
 
 
              <NavLink to='/' className={({isActive}) => isActive ? Navstyle.active : Navstyle.logout}>
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '1.9em' }}>
               logout
               </span> LOGOUT
             </NavLink>

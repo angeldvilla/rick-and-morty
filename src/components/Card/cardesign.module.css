@@ -190,3 +190,31 @@
   span .material-symbols-outlined{
     color: red;
   }
+
+  .randomChar{
+    margin-right: 1.7em; 
+    margin-left: auto;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 0;
+    width: 14.8rem;
+    height: 2.5rem;
+    color: #ffffff;
+    background: linear-gradient(rgba(154, 127, 251, 0.461), rgba(0, 0, 0, 0));
+    border: transparent;
+    overflow: hidden;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3em;
+    transition: 300ms;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.757);
+    text-decoration: none; 
+  }
+
+  .randomChar:hover{
+    color: #ffffff;
+    background: linear-gradient(rgba(56, 234, 109, 0.856), rgba(0, 0, 0, 0));
+    box-shadow: 0 0 0em #1b65d5;
+    transform: scale(1.06);
+    text-shadow: 0 0 .1rem rgba(0, 0, 0, 0.461), 0 0 .1rem rgba(0, 0, 0, 0.461), 0 0 .8rem rgba(0, 0, 0, 0.461);
+    text-decoration: none; 
+  }

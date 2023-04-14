@@ -29,26 +29,90 @@
     align-items: center;
   }
   
-  .home,
-  .about,
-  .favorites,
-  .logout {
+  .home{
+    display: flex;
+    align-items: center; 
+    margin: 0 auto; 
     margin-right: 1.9em; 
-    margin-left: auto;
-    font-weight: bold;
-    border-radius: 8px;
+    margin-left: auto; 
+    font-weight: bold; 
+    border-radius: 8px; 
     margin-bottom: 0;
-    width: 14.8rem;
-    height: 2.4rem;
-    color: #ffffff;
-    background: linear-gradient(rgba(154, 127, 251, 0.461), rgba(0, 0, 0, 0));
-    border: transparent;
-    overflow: hidden;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.3em;
-    transition: 300ms;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.757);
-    text-decoration: none; 
+    width: 14.3rem; 
+    height: 2.4rem; 
+     color: #ffffff; 
+     background: linear-gradient(rgba(154, 127, 251, 0.461), rgba(0, 0, 0, 0)); 
+     border: transparent; 
+     overflow: hidden; 
+     font-family: 'Fjalla One', sans-serif; 
+     font-size: 1.3em; 
+     transition: 300ms; 
+     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.757); 
+     text-decoration: none; 
+  }
+  
+  .favorites{
+    display: flex;
+    align-items: center; 
+    margin: 0 auto; 
+    margin-right: 1.9em; 
+    margin-left: auto; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    margin-bottom: 0;
+    width: 14.6rem; 
+    height: 2.4rem; 
+     color: #ffffff; 
+     background: linear-gradient(rgba(154, 127, 251, 0.461), rgba(0, 0, 0, 0)); 
+     border: transparent; 
+     overflow: hidden; 
+     font-family: 'Fjalla One', sans-serif; 
+     font-size: 1.3em; 
+     transition: 300ms; 
+     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.757); 
+     text-decoration: none; 
+  }
+  .about {
+    display: flex;
+    align-items: center; 
+    margin: 0 auto; 
+    margin-right: 1.6em; 
+    margin-left: auto; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    margin-bottom: 0;
+    width: 14.6rem; 
+    height: 2.4rem; 
+     color: #ffffff; 
+     background: linear-gradient(rgba(154, 127, 251, 0.461), rgba(0, 0, 0, 0)); 
+     border: transparent; 
+     overflow: hidden; 
+     font-family: 'Fjalla One', sans-serif; 
+     font-size: 1.3em; 
+     transition: 300ms; 
+     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.757); 
+     text-decoration: none; 
+  }
+  .logout {
+    display: flex;
+    align-items: center; 
+    margin: 0 auto; 
+    margin-right: 1.8em; 
+    margin-left: auto; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    margin-bottom: 0;
+    width: 14.6rem; 
+    height: 2.4rem; 
+     color: #ffffff; 
+     background: linear-gradient(rgba(154, 127, 251, 0.461), rgba(0, 0, 0, 0)); 
+     border: transparent; 
+     overflow: hidden; 
+     font-family: 'Fjalla One', sans-serif; 
+     font-size: 1.3em; 
+     transition: 300ms; 
+     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.757); 
+     text-decoration: none; 
   }
   
   .home:hover,
@@ -71,32 +135,29 @@
   .searchBar {
     margin-left: auto;
   }
-  
-
-  .material-symbols-outlined{
-    justify-content: space-between;
-  }
-
 
 /* COLORES POR SELECCION DE OPCION DEL NAV */
 
 .active {
-  margin-right: 1.5em; 
-  margin-left: auto;
-  font-weight: bold;
-  border-radius: 50em;
+  display: flex;
+  align-items: center; 
+  margin: 0 auto; 
+  margin-right: 1.9em; 
+  margin-left: auto; 
+  font-weight: bold; 
+  border-radius: 8px; 
   margin-bottom: 0;
-  width: 14rem;
-  height: 2.3rem;
-  background: linear-gradient(rgba(154, 127, 251, 0.461), rgba(0, 0, 0, 0));
-  border: transparent;
-  overflow: hidden;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 1.2em;
-  transition: 300ms;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.757);
-  text-decoration: none; 
-  color: #9e9e9ecb;
+  width: 14rem; 
+  height: 2.3rem; 
+  color: #9e9e9ecb; 
+   background: linear-gradient(rgba(154, 127, 251, 0.461), rgba(0, 0, 0, 0)); 
+   border: transparent; 
+   overflow: hidden; 
+   font-family: 'Fjalla One', sans-serif; 
+   font-size: 1.33em; 
+   transition: 300ms; 
+   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.757); 
+   text-decoration: none; 
 }
 
 .active:hover{

@@ -5,9 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: /* url('https://i.pinimg.com/originals/1d/f2/44/1df24485966bb368802b09adf4959a5b.gif'); */ /* url('https://i.ytimg.com/vi/o_g_egzo-rU/maxresdefault.jpg'); */ 
+  background-image: /* url('https://i.pinimg.com/originals/1d/f2/44/1df24485966bb368802b09adf4959a5b.gif');  */
+  url('https://i.ytimg.com/vi/o_g_egzo-rU/maxresdefault.jpg'); 
   /* url('https://media.tenor.com/R4_sUN8G5uYAAAAd/rick-and-morty.gif'); */
-  url('https://steamuserimages-a.akamaihd.net/ugc/1714169669744769658/F652EC51D44D6D8B739973059761498D73EC5944/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+  /* url('https://steamuserimages-a.akamaihd.net/ugc/1714169669744769658/F652EC51D44D6D8B739973059761498D73EC5944/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'); */
   /* url('https://media.tenor.com/ES2gLiFcLsEAAAAM/rick-and-morty-morty.gif'); */
   background-size: cover;
   background-repeat: repeat-y, repeat-x;

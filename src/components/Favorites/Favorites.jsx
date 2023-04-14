@@ -17,10 +17,9 @@ const Favorites = () => {
 
     return(
         <div className={styles.nav}>
-                {/* <h3 className={styles.filter}>FILTERS</h3> */}
-               {/*  <div>
+                <div>
                 <h2 className={styles.titleFav}>YOUR FAVORITES CARDS!</h2>
-                </div> */}
+                
                 <select className={styles.select} onChange={handleOrder}>
                 <option value="order" style={{color:'black'}}>Order By</option>
                 <option value="Upward" style={{color:'black'}} >Upward</option>
@@ -34,21 +33,17 @@ const Favorites = () => {
                <option value="Female" style={{color:'black'}} >Female</option>
                <option value="Genderless" style={{color:'black'}} >Genderless</option>
                <option value="unknown" style={{color:'black'}} >unknown</option>
-                </select>
+                </select> </div>
 
              <div className={styles.container}>
-             <div>
-                <h2 className={styles.titleFav}>YOUR FAVORITES CARDS!</h2>
-                </div>
             { myFavorites.map((character) => {
                 return(
                     <div className={styles.card} key={character.id} >
                     
+                    <br/> 
                     <img src={character.image} alt={character.name} />
-                     
                     <h2 className={styles.name}>{character.name}</h2>
-                    <h2 className={styles.species}>{character.species}</h2>
-                    <h2 className={styles.gender}>{character.gender}</h2> <br/><hr/>
+                    <hr/>
                     
                     <Link to={`/detail/${character.id}`} className={styles.link} >
                         <h2 className={styles.details}>Details</h2>

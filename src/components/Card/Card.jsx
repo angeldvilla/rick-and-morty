@@ -30,33 +30,29 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
       }
    }
 
-   /* const randomCharacter = () => {
-      const idRandom = Math.floor(Math.random() * 826);
-      onSearch(idRandom);
-   } */
-   
    return (
       <div className={styles.card} >
            { isFav ? (
-               <button className={styles.fav} onClick={handleFavorite}><span class="material-symbols-outlined" style={{color:'red'}}>
-               favorite 
-               </span>{/* ❤️ */}</button>
-            ) : (
-               <button className={styles.fav} onClick={handleFavorite}><span class="material-symbols-outlined" style={{color:'white'}}>
-               favorite
-               </span>{/* 🤍 */}</button>
-            )
-               }
+               <button className={styles.fav} onClick={handleFavorite}>
+               
+               <span class="material-symbols-outlined">❤️</span>
+               </button>) 
+               : 
+               (<button className={styles.fav} onClick={handleFavorite}>
+            
+               <span class="material-symbols-outlined">🤍</span>
+               </button>)
+             }
+
             <button className={styles.boton} onClick={() => {onClose();removeFavoriteCharacter(id)}} > 
             <span className="material-symbols-outlined">
             cancel</span></button>
      
+             <br/>
              <img src={image} alt={name} />
-             
-               <h2 className={styles.name}>{name}</h2>
-               <h2 className={styles.species}>{species}</h2>
-               <h2 className={styles.gender}>{gender}</h2> <br/><hr/>
-            
+            <h2 className={styles.name}>{name}</h2>
+            <hr/>
+
                <Link to={`/detail/${id}`} className={styles.link} >
                   <h2 className={styles.details}>Details</h2>
                </Link>
