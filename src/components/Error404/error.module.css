@@ -1,10 +1,11 @@
 .errorContainer {  
     background-image: url('https://i.pinimg.com/originals/6a/7c/e9/6a7ce99608d78073da7f984b8ba1af0f.gif');
-    background-size: cover;
+    background-size: 100%;
+    margin-bottom : 2em;
     background-repeat: repeat-y, repeat-x;
     backdrop-filter: blur(30px) brightness(0.5);
     overflow: auto;
-    height: 90vw;
+    height: 75vw;
   }
 
   .errorContainer::before {
@@ -21,12 +22,12 @@
 
   .errorContainer * {
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
   
   h1 {
     font-size: 6rem;
-    color: #32fa008e;
+    color: #fa0000b0;
   }
   
   p {
@@ -39,6 +40,16 @@
     border-radius: 50em;
     height: 200px;
     width: auto;
+    opacity: 0.8;
   }
+  
 
+.shadowDrop{animation:tracking-in-expand-forward-top 0.4s linear both} @keyframes tracking-in-expand-forward-top{0%{letter-spacing:-.2em;transform:translateZ(-700px) translateY(-100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}
+
+
+.trackingforwardbottom{animation:tracking-in-expand-forward-bottom 0.4s linear both} @keyframes tracking-in-expand-forward-bottom{0%{letter-spacing:-.2em;transform:translateZ(-700px) translateY(100px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}
+
+.rotateCenter{animation:rotate-center 1.9s} @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+.rotatehorizontal{animation:rotate-horizontal-center 3.9s} @keyframes rotate-horizontal-center{0%{transform:rotateX(0)}100%{transform:rotateX(-360deg)}}
   

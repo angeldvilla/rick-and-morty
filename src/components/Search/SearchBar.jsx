@@ -11,7 +11,7 @@ const SearchBar = ({onSearch}) => {
   
    return (
       <div className={styles.search}>
-       <input className={styles.buscador} type='search' placeholder='CHARACTER...' value={character} onChange={handleChange}/>  
+       <input className={styles.buscador} type='search' placeholder='CHARACTER...' value={character} onChange={handleChange}></input>  
       
       <button className={styles.agrega} onClick={() => onSearch(character, setCharacter(''))}>
       <span className="material-symbols-outlined">

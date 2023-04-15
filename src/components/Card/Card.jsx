@@ -31,8 +31,8 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
    }
 
    return (
-      <div className={styles.card}>
       <div className={styles.blurInExpand}>
+      <div className={styles.card}>
            { isFav ? (
                <button className={styles.fav} onClick={handleFavorite}>
                

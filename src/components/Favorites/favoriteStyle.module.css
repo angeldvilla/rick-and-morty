@@ -18,8 +18,8 @@
   }
   
   .card {
-      background-image: url('https://w0.peakpx.com/wallpaper/110/77/HD-wallpaper-rick-and-morty-digital-rick-and-morty-tv-shows-digital-art.jpg');
-      /* url('https://i.ytimg.com/vi/o_g_egzo-rU/maxresdefault.jpg'); */
+      background-image: /* url('https://w0.peakpx.com/wallpaper/110/77/HD-wallpaper-rick-and-morty-digital-rick-and-morty-tv-shows-digital-art.jpg'); */
+      url('https://i.ytimg.com/vi/o_g_egzo-rU/maxresdefault.jpg');
       border-radius: 50px;
       box-shadow: 0 2px 10px #5c06f1a8 /* rgba(0, 0, 0, 0.2) */;
       padding: 20px;
