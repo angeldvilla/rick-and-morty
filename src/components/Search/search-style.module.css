@@ -15,8 +15,8 @@
   outline: black;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
-  margin-right: 0.5em;
-  padding: 12px;
+  margin-right: 1.9em;
+  padding: 0.8em;
   width: 100%;
   position: relative;
   align-items: center;
@@ -28,7 +28,7 @@
 
 .search input:focus {
   outline: none;
-  border-color: #5c06f1a8;
+  border-color: #7029ebf7;
   
 }
 
@@ -44,31 +44,20 @@
 
 
 .agrega{
-  border: 2px solid #909090;
-  border-bottom: 2px solid #909090;
-  border-radius: 12px;
-  outline: black;
-  border-radius: 50%;
-  padding: 8px;
+  border-radius: 5em;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
-  margin-right: 1.6em;
-  width: 80%;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0px 2px 9px black;
-  font-family: 'MyFont';
-  font-size: 1.5em;
+  margin-left: -2.9em;
+  margin-right: 2.2em;
+  width: -10em;
 }
 
 .agrega:hover {
   outline: none;
-  background-color: #edfe03ef /* #06f187a8 */;
-  color:  rgb(0, 0, 0);
+  background-color: #688fadef;
+  color:  rgb(255, 255, 255);
   transform: scale(1.005);
   transition: 0.15s ease-in-out;
-  border: 2px solid  #0ef1065f /* #a221f2a8 */;
-  border-bottom: 2px solid #0ef1065e /* #a221f2a8*/ ;
-}
+  border: 2px solid  #5c06f14b;
+  border-bottom: 2px solid #5c06f14b ;
+} 

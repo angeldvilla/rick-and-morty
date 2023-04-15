@@ -36,11 +36,10 @@ const handleInputChange = (event) => {
     return (
         <form onSubmit={handleSubmit} className={style.loginContain} autoComplete="off">
           <div className={style.topContainer}>
-            <div className={style.img}>
               <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/2560px-Rick_and_Morty.svg.png' alt='Login' />
-            </div>
+          
             <label htmlFor='username' className={style.usernameLabel}>
-              USERNAME:
+            USERNAME:<img src="https://simg.nicepng.com/png/small/10-100011_rick-and-morty-rick-and-morty-rick-head.png" style={{ width: '1.5em', height: '1.7em', marginLeft: '0.5em'}}/> 
             </label>
             <input
               autoComplete="off"
@@ -53,7 +52,7 @@ const handleInputChange = (event) => {
               {errors.username && <p className={style.validacion}>{errors.username}</p>}
             
             <label htmlFor='password' className={style.passwordLabel}>
-              PASSWORD:
+              PASSWORD:<img src='https://www.pngitem.com/pimgs/m/588-5883236_rick-and-morty-face-png-transparent-png.png' style={{width: '1.5em', height: '1.7em', marginLeft: '0.5em'}}/>
             </label>
             <input
              autoComplete="off"
@@ -65,7 +64,10 @@ const handleInputChange = (event) => {
             />
             {errors.password && <p className={style.validacion}>{errors.password}</p>}
           <div className={style.bottomContainer}>
-            <button className={style.loginButton}>LOGIN</button>
+            <button className={style.loginButton}>LOGIN
+            <span class="material-symbols-outlined">
+            login
+          </span></button>
           </div>
           </div>
         </form>

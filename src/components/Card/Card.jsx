@@ -31,16 +31,17 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
    }
 
    return (
-      <div className={styles.card} >
+      <div className={styles.card}>
+      <div className={styles.blurInExpand}>
            { isFav ? (
                <button className={styles.fav} onClick={handleFavorite}>
                
-               <span class="material-symbols-outlined">❤️</span>
+               <span className="material-symbols-outlined">❤️</span>
                </button>) 
                : 
                (<button className={styles.fav} onClick={handleFavorite}>
             
-               <span class="material-symbols-outlined">🤍</span>
+               <span className="material-symbols-outlined">🤍</span>
                </button>)
              }
 
@@ -57,7 +58,7 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
                   <h2 className={styles.details}>Details</h2>
                </Link>
             
-         </div>
+         </div> </div> 
    );
 }
 

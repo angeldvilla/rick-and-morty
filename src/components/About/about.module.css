@@ -72,7 +72,7 @@
   .links {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     font-family: 'Secular One', sans-serif;
     font-size: 13px;
   }
@@ -127,10 +127,6 @@
     color: rgb(255, 255, 255);
     box-shadow: 0 0 1rem #d7ea32, 0 0 4rem #f90074, 0 0 8rem #456dfc;
     transition: 0.3s ease;
-  }
-
-  .icon {
-    margin-right: 5px;
   }
   
   .footer {
