@@ -29,7 +29,7 @@
 .search input:focus {
   outline: none;
   border-color: #7029ebf7;
-  
+  transition-delay: 0.2s ;
 }
 
 .search .border {

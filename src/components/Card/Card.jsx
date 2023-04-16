@@ -51,10 +51,11 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
         cancel</span></button> </div>
  
          <br/>
-         <img src={image} alt={name} /><br/><br/>
+         <img src={image} alt={name} />
+         <br/>
         <h2 className={styles.name}>{name}</h2>
-        <br/><hr/><br/>
-
+        <hr style={{top:'2.1em'}}/>
+        <br/><br/><br/>
            <Link to={`/detail/${id}`} className={styles.link} >
               <h2 className={styles.details}>Details</h2>
            </Link>

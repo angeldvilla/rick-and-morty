@@ -4,44 +4,82 @@ import myImage from '../images/IMG-20230105-WA0046.jpg'
         const About = () => {
             return (
               <div className={style.aboutwrapper}>
+              
               <div className={style.aboutleft}>
+                
                 <div className={style.aboutleftcontent}>
+                  
                   <div>
                     
+                      <div className={style.rotateverticalcenter}>
+                      
                       <div className={style.aboutimg}>
                         <img src={myImage} alt = "ADVL" />
                       </div>
+                      
+                      </div>
                     
-        
-                    <h2>ANGEL DAVID<br/>VILLA LUJÁN</h2>
-                    <h3>Web Developer</h3><br/>
+
+                    <br/>
+                    <div className={style.trackingExpand}><h2>ANGEL DAVID<br/>VILLA LUJÁN</h2></div>
+                    
+                    <div className={style.trackinginexpandCenter}><h3>Web Developer</h3><br/></div>
+                  
                   </div>
         
-                  <br/><h4 className={style.fontH4}>CONTACT ME:</h4>
-                  <ul className={style.icons}>
-                    <li><i className="fab fa-github"></i></li>
-                    <li><i className="fab fa-linkedin"></i></li>
-                    <li><i className="fab fa-instagram"></i></li>
+                  <br/><div className={style.trackinginexpand}><h4 className={style.fontH4}>CONTACT ME:</h4></div>
+                    
+                  <div className={style.blurinexpand}> <ul className={style.icons}>
+                    <li>
+                      <a href="https://github.com/angeldvilla" target="_blank">
+                      <i className="fab fa-github"></i>
+                      </a>
+                      </li>
+
+                    <li>
+                      <a href="https://www.linkedin.com/in/angel-david-villa-luj%C3%A1n-396634255/" target='_blank'>
+                      <i className="fab fa-linkedin"></i>
+                      </a>
+                      </li>
+
+                    <li>
+                    <a href="https://www.instagram.com/_angeldvilla_/" target='_blank'>
+                    <i className="fab fa-instagram"></i>
+                    </a>
+                    </li>
+
                   </ul>
+                  
+                  </div>
+                
                 </div>
+             
               </div>
         
               <div className={style.aboutright}>
-                <h1>MODULE 2<span>!</span></h1> 
-                <h2><strong>PROJECT RICK AND MORTY</strong></h2>
+             
+              <div className={style.trackingExpand}><h1>MODULE 2<span>!</span></h1> </div>
+               
+               <div className={style.trackingincontract}> <h2><strong>PROJECT RICK AND MORTY</strong></h2></div>
                 
                 
-                  <img src='https://media.tenor.com/5mQ6UldmCQ4AAAAC/rickand-morty-rick.gif' alt='Rick si sabe' className={style.aboutimg} style={{width:'9em', height:'7.5em', borderRadius:'50%'}}/>
+               <div className={style.blurinexpand}><img src='https://media.tenor.com/5mQ6UldmCQ4AAAAC/rickand-morty-rick.gif' alt='Rick si sabe' className={style.aboutimg} style={{width:'9em', height:'7.5em', borderRadius:'50%'}}/></div>
                   
 
 
                 <br/><br/> <span>Hello everyone, these were the technologies that were worked on during the project</span> 
                 
                 <div className = {style.aboutpara}>
-                <br/><span style={{color: '#dd5c2d'}}><i>Tools:</i></span><br/>
-                  <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg'className={style.aboutimg} style={{width:'6.9em', height:'5.2em', borderRadius:'50%'}}  alt='JAVASCRIPT'/>
+                <br/>
+                <div className={style.trackinginexpandCenter}>
+                  <span style={{color: '#dd5c2d'}}><i>Tools:</i></span>
+                  </div>
+              
+                  <div className={style.js}>
+                  <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' className={style.aboutimg} style={{width:'6.9em', height:'5.2em', borderRadius:'50%'}}  alt='JAVASCRIPT'/>
                   <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg' className={style.aboutimg} style={{width:'6em', height:'5.2em', borderRadius:'50%'}} alt='REACT'/>
-                  <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg' className={style.aboutimg} style={{width:'6em', height:'5.2em', borderRadius:'50%'}} alt='REDUX'/>  </div>
+                  <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg' className={style.aboutimg} style={{width:'6em', height:'5.2em', borderRadius:'50%'}} alt='REDUX'/></div>
+                  </div>
                
         
                 <div className = {style.aboutpara}>

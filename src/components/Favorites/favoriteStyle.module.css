@@ -62,29 +62,35 @@
    } 
   
    .card img {
-      top: -1.2em;
-      font-family: 'MyFont';
+      top: -0.5rem;
       box-shadow: 0 2px 1em #0effd7d6 ;
-      border-radius: 6em;
+      border-radius: 5.5rem;
       height: 200px;
       width: 100%;
       opacity: 0.6;
       
     }
-  
+
     .card img:hover{
       opacity: 1;
       transform: scale(1.03);
       filter: brightness(1.1);
     }
-    
+
+    .card .favoriteImg {
+      top: 0.2em;
+      box-shadow: 0 2px 1em #efff0ed6 ;
+      height: 2.6em;
+      width: 20%;
+    }
+  
     .link{
       color: aliceblue;
       text-decoration: none;
   }
   
     .card .name {
-      top: 1.rem;
+      top: 0.3rem;
       font-family: 'MyFont';
       font-size: 2em;
       color: #1fd1c5e7;

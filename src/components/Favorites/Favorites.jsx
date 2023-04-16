@@ -51,8 +51,9 @@ const Favorites = () => {
                     <br/> 
                     <img src={character.image} alt={character.name} />
                     <Link to={`/detail/${character.id}`} className={styles.link} >
-                    <h2 className={styles.name}>{character.name}</h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="favorite" className={styles.favoriteImg}/>
                     </Link>
+                    <h2 className={styles.name}>{character.name}</h2>
             
          
                 </div>
