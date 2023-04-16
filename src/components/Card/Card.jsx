@@ -31,35 +31,35 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
    }
 
    return (
-         <div className={styles.rotatescaledown}>
-          <div className={styles.card}>
-             <div> 
-           { isFav ? (
-                <button className={styles.fav} onClick={handleFavorite}>
-              
-               <span className="material-symbols-outlined">❤️</span>
-               </button>) 
-               : 
-               (<button className={styles.fav} onClick={handleFavorite}>
-            
-               <span className="material-symbols-outlined">🤍</span>
-               </button>)
-             }
+      <div className={styles.rotatescaledown}>
+      <div className={styles.card}>
+         <div>
+       { isFav ? (
+          <button className={styles.fav} onClick={handleFavorite}>
+          
+           <span className="material-symbols-outlined">❤️</span>
+           </button>) 
+           : 
+           (<button className={styles.fav} onClick={handleFavorite}>
+        
+           <span className="material-symbols-outlined">🤍</span>
+           </button>)
+         }
 
-            <button className={styles.boton} onClick={() => {onClose();removeFavoriteCharacter(id)}} > 
-            <span className="material-symbols-outlined">
-            cancel</span></button> </div>
-     
-             <br/>
-             <img src={image} alt={name} />
-            <h2 className={styles.name}>{name}</h2>
-            <hr/>
+        <button className={styles.boton} onClick={() => {onClose();removeFavoriteCharacter(id)}} > 
+        <span className="material-symbols-outlined">
+        cancel</span></button> </div>
+ 
+         <br/>
+         <img src={image} alt={name} /><br/><br/>
+        <h2 className={styles.name}>{name}</h2>
+        <br/><hr/><br/>
 
-               <Link to={`/detail/${id}`} className={styles.link} >
-                  <h2 className={styles.details}>Details</h2>
-               </Link>
-            
-         </div> </div> 
+           <Link to={`/detail/${id}`} className={styles.link} >
+              <h2 className={styles.details}>Details</h2>
+           </Link>
+        
+     </div> </div>
    );
 }
 

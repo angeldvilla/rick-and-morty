@@ -131,11 +131,7 @@ function App () {
         <button className={styles.randomChar} onClick={randomCharacter}>RANDOM CHAR
         <img src='https://www.comoaprenderdesenhar.com.br/wp-content/uploads/2020/10/como-desenhar-morty.png' style={{ width: '1.1em', height: '0.9em', 
           marginRight: '-0.1em', marginLeft: '0.3em' }} />
-
-         {/* <span className="material-symbols-outlined" style={{ width: '1.3em', height: '1.5em', 
-          marginRight: '-0.2em', marginLeft: '0.1em' }}>
-          shuffle
-          </span> */}
+          
            </button> 
   
             )}

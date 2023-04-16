@@ -50,18 +50,17 @@ const Favorites = () => {
                     
                     <br/> 
                     <img src={character.image} alt={character.name} />
-                    <h2 className={styles.name}>{character.name}</h2>
-                    <hr/>
-                    
                     <Link to={`/detail/${character.id}`} className={styles.link} >
-                        <h2 className={styles.details}>Details</h2>
+                    <h2 className={styles.name}>{character.name}</h2>
                     </Link>
+            
          
                 </div>
                     )
                 })    
             }
-           </div></div>
+           </div>
+           </div>
      </div>
     )
 }

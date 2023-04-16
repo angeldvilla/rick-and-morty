@@ -61,7 +61,7 @@ const NavBar = ({onSearch}) => {
              
              <NavLink to='/' className={({isActive}) => isActive ? Navstyle.active : Navstyle.logout}>
             <img src="https://www.eltiomediafire.com/store/wp-content/uploads/2021/07/pocket-mortys.png" style={{ width: '1.4em', height: '1.2em', marginRight: '0.2em', marginLeft: '0.4em' }}></img>
-             {/* LOGOUT */}<span class="material-symbols-outlined">
+             {/* LOGOUT */}<span className="material-symbols-outlined">
             logout
             </span>
             </NavLink>
