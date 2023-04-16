@@ -31,11 +31,12 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
    }
 
    return (
-      <div className={styles.blurInExpand}>
-      <div className={styles.card}>
+         <div className={styles.rotatescaledown}>
+          <div className={styles.card}>
+             <div> 
            { isFav ? (
-               <button className={styles.fav} onClick={handleFavorite}>
-               
+                <button className={styles.fav} onClick={handleFavorite}>
+              
                <span className="material-symbols-outlined">❤️</span>
                </button>) 
                : 
@@ -47,7 +48,7 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
 
             <button className={styles.boton} onClick={() => {onClose();removeFavoriteCharacter(id)}} > 
             <span className="material-symbols-outlined">
-            cancel</span></button>
+            cancel</span></button> </div>
      
              <br/>
              <img src={image} alt={name} />

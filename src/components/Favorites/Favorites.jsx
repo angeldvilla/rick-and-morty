@@ -18,8 +18,15 @@ const Favorites = () => {
     return(
         <div className={styles.nav}>
                 <div>
-                <h2 className={styles.titleFav}>YOUR FAVORITES CARDS!</h2>
+                <div className={styles.rotateverticalcenter}><h2 className={styles.titleFav}> <span className="material-symbols-outlined" style={{ width: '1.2em', height: '1.2em', marginRight: '0.6em', marginLeft: '0.2em' }}>
+                style
+                </span>YOUR FAVORITES CARDS!
                 
+                <span className="material-symbols-outlined" style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '0.6em' }}>
+                style
+                </span></h2></div> 
+                
+                <div className={styles.scaleupverticalcenter}>
                 <select className={styles.select} onChange={handleOrder}>
                 <option value="order" style={{color:'black'}}>Order By</option>
                 <option value="Upward" style={{color:'black'}} >Upward</option>
@@ -33,8 +40,9 @@ const Favorites = () => {
                <option value="Female" style={{color:'black'}} >Female</option>
                <option value="Genderless" style={{color:'black'}} >Genderless</option>
                <option value="unknown" style={{color:'black'}} >unknown</option>
-                </select> </div>
+                </select> </div></div>
 
+                <div className={styles.rotatecenter}>
              <div className={styles.container}>
             { myFavorites.map((character) => {
                 return(
@@ -53,7 +61,7 @@ const Favorites = () => {
                     )
                 })    
             }
-           </div>
+           </div></div>
      </div>
     )
 }

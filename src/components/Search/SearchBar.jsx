@@ -10,13 +10,16 @@ const SearchBar = ({onSearch}) => {
 
   
    return (
+   <div className={styles.scaleupcenter}>
+      
       <div className={styles.search}>
-       <input className={styles.buscador} type='search' placeholder='CHARACTER...' value={character} onChange={handleChange}></input>  
+         <input className={styles.buscador} type='search' placeholder='CHARACTER...' value={character} onChange={handleChange}></input> 
+      </div> 
       
       <button className={styles.agrega} onClick={() => onSearch(character, setCharacter(''))}>
-      <span className="material-symbols-outlined">
-         search
-         </span> 
+            <span className="material-symbols-outlined">
+            search
+            </span> 
       </button> 
     
       </div>

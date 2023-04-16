@@ -123,13 +123,13 @@ function App () {
       <div style={{flexDirection: 'row' }}>
       
       
-      <div>
+      <div className={styles.blurIn}>
       <br/><br/><br/><br/>
       {location.pathname ==='/' || location.pathname !== '/home' || 
        location.pathname === '/favorites' || 
        location.pathname === '/detail/:`${id}`' || location.pathname !== '/about' && (
         <button className={styles.randomChar} onClick={randomCharacter}>RANDOM CHAR
-        <img src='https://media.tenor.com/JHFfBjUQcxEAAAAC/dance-morty.gif' style={{ width: '1.1em', height: '0.9em', 
+        <img src='https://www.comoaprenderdesenhar.com.br/wp-content/uploads/2020/10/como-desenhar-morty.png' style={{ width: '1.1em', height: '0.9em', 
           marginRight: '-0.1em', marginLeft: '0.3em' }} />
 
          {/* <span className="material-symbols-outlined" style={{ width: '1.3em', height: '1.5em', 

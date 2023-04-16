@@ -52,4 +52,7 @@
 .rotateCenter{animation:rotate-center 1.9s} @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
 
 .rotatehorizontal{animation:rotate-horizontal-center 3.9s} @keyframes rotate-horizontal-center{0%{transform:rotateX(0)}100%{transform:rotateX(-360deg)}}
+
+
+.shadowdropleftright{animation:shadow-drop-left-right 0.4s linear both} @keyframes shadow-drop-left-right{0%{box-shadow:0 0 0 0 transparent,0 0 0 0 transparent}100%{box-shadow:-12px 0 20px -12px rgba(255,255,255,.55),12px 0 20px -12px rgba(255,255,255,.55)}}
   

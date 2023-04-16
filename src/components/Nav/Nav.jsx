@@ -20,17 +20,18 @@ const NavBar = ({onSearch}) => {
     return (
       <nav className={Navstyle.nav}>
           
-          <div className={Navstyle.trackingInContract}>
+          <div className={Navstyle.scaleupLeft}>
           <div className={Navstyle.imagenNav}>
-            <img src="https://www.eltiomediafire.com/store/wp-content/uploads/2021/07/pocket-mortys.png"
+            <img src= "https://www.freepnglogos.com/uploads/rick-and-morty-png/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png"
             alt="R&M" />
           </div> </div>
 
         <div className={Navstyle.botones}>
+          <div className={Navstyle.scaleupVerticalcenter}>
           <div className={Navstyle.links}>
-          
           <NavLink to='/home' className={({isActive}) => isActive ? Navstyle.active : Navstyle.home}>
-            <img src="https://media.tenor.com/uF8rAQ4NN5wAAAAC/rick-sanchez-rick-and-morty.gif"style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '2.8em' }}/>
+            <img src="https://www.pngall.com/wp-content/uploads/2016/04/Home-Download-PNG.png"
+            style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '1.6em' }}/>
       
               HOME
             </NavLink>
@@ -39,30 +40,33 @@ const NavBar = ({onSearch}) => {
             (<button className={Navstyle.home} onClick={randomCharacter}>RANDOM CHARACTHER</button>) 
           : null} */}
            
-          <NavLink to='/favorites' className={({isActive}) => isActive ? Navstyle.active : Navstyle.favorites}>
-            <img src="https://media.tenor.com/SPZDWMLgA0gAAAAC/rick-kiss-rick-and-morty-kiss.gif" style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '1.9em' }} />
+          <NavLink to='/favorites' className={({isActive}) => isActive ? Navstyle.activeFav : Navstyle.favorites}>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Estrella_amarilla.png"
+           style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '1.3em' }} />
             
             FAVORITES
           </NavLink>
           
-          <SearchBar onSearch={onSearch}/>
       
             <NavLink to='/about' className={({isActive}) => isActive ? Navstyle.active : Navstyle.about}>
-            <img src="https://media.tenor.com/5mQ6UldmCQ4AAAAC/rickand-morty-rick.gif" style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '2.9em' }}/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Eo_circle_amber_info.svg/1200px-Eo_circle_amber_info.svg.png"
+             style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '1.5em' }}/>
             
              ABOUT
             </NavLink>
 
+          <SearchBar onSearch={onSearch}/>
 
              {/* <button onClick={handleLogOut}>LOGOUT</button> */}
              
              <NavLink to='/' className={({isActive}) => isActive ? Navstyle.active : Navstyle.logout}>
-            <img src="https://media.tenor.com/doUcitxR2acAAAAC/rick-and-morty-smirk.gif" style={{ width: '1.2em', height: '1.2em', marginRight: '0.2em', marginLeft: '4.8em' }}></img>
+            <img src="https://www.eltiomediafire.com/store/wp-content/uploads/2021/07/pocket-mortys.png" style={{ width: '1.4em', height: '1.2em', marginRight: '0.2em', marginLeft: '0.4em' }}></img>
              {/* LOGOUT */}<span class="material-symbols-outlined">
             logout
             </span>
             </NavLink>
 
+          </div>
           </div>
         </div>
       </nav>

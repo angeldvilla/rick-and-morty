@@ -4,15 +4,14 @@ import myImage from '../images/IMG-20230105-WA0046.jpg'
         const About = () => {
             return (
               <div className={style.container}>
+              
+                <img src={myImage} style={myImage.yolaimagen}/>
+                 
                 <div className={style.card}>
-                    <div>
-                      <img src={myImage} style={myImage.yolaimagen}/>
-                      </div>
+                    
                  <br/><br/>
                  <h2 className={style.title}>ABOUT ME</h2>
 
-                  
-            
                   <span className={style.text}>Hello everyone, my name is Angel David Villa, I am studying the M2 module of the Henry Bootcamp, on this occasion, I am developing the APP of the Rick & Morty integration project, which is based on consuming an API and allows us to add and close the cards with the characters from said series, I have focused on giving it a very striking appearance (to my liking) and well I hope you like it, what I have done, thanks for visiting</span>
           
                   <br/><br/><div className={style.links}>

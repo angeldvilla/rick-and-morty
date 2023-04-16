@@ -7,8 +7,9 @@ import mortyError from '../images/morty-error2.png';
 const Error = () => {
  
   return (
-       
-    <div className={style.errorContainer}>
+       <div className={style.shadowdropleftright}>
+    
+      <div className={style.errorContainer}>
     
         <h1 style={{fontSize: '6.9em'}} className={style.shadowDrop}>
         
@@ -21,7 +22,8 @@ const Error = () => {
         
         <p style={{ fontSize: '2.4em'}} className={style.rotatehorizontal}> <b><i>The Page Not Found </i></b></p>
        
-        </div>
+        </div> 
+      </div>
     
   );
 }
