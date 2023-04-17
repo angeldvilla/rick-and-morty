@@ -5,16 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: 
-  url('https://media.tenor.com/R4_sUN8G5uYAAAAd/rick-and-morty.gif'); /* FAVORITES */
-  /* url('https://i.pinimg.com/originals/1d/f2/44/1df24485966bb368802b09adf4959a5b.gif'); */
-  /* url('https://i.ytimg.com/vi/o_g_egzo-rU/maxresdefault.jpg'); */ /*HOME*/
-  /* url('https://steamuserimages-a.akamaihd.net/ugc/1714169669744769658/F652EC51D44D6D8B739973059761498D73EC5944/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'); */ /*DETAIL*/
-  /* url('https://media.tenor.com/ES2gLiFcLsEAAAAM/rick-and-morty-morty.gif'); */ /* ABOUT */
-  /* url('../src/components/images/r&m.jpg'); */
-    /* url('../src/components/images/rick-and-morty\ fondlogin.jpg'); */
-  /* url('https://w0.peakpx.com/wallpaper/537/731/HD-wallpaper-rick-and-morty-season-4-rick-and-morty-season-4-rick-and-morty-tv-shows.jpg'); */ /*LOGIN */
-/* url('https://thumbs.gfycat.com/AlarmedInsistentGrayreefshark-size_restricted.gif'); */
+}
+
+/* ---------------------- */
+.login-background{
+  background-image: url('./components/images/LOGIN\ IMAGE.jpg');
   background-size: 100%;
   background-attachment:fixed;
   background-repeat: no-repeat;
@@ -23,8 +18,48 @@ body {
   overflow: auto;
 }
 
+.home-background{
+  background-image: url('./components/images/HOME\ IMAGE.jpg');
+  background-size: 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(7px) brightness(0.31);
+  height: 100vw; 
+  overflow: auto;
+}
+.favorites-background{
+  background-image: url('./components/images/FAVORITES\ IMAGE.gif');
+  background-size: 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(7px) brightness(0.31);
+  height: 100vw; 
+  overflow: auto;
+}
+.detail-background{
+  background-image: url('./components/images/DETAIL\ IMAGE.gif');
+  background-size: 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(7px) brightness(0.31);
+  height: 100vw; 
+  overflow: auto;
+}
+.about-background{
+  background-image: url('./components/images/rick-and-morty\ fondlogin.jpg');
+  background-size: 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(7px) brightness(0.31);
+  height: 100vw; 
+  overflow: auto;
+}
+/* ---------------------- */
 
+
+/* ---------------------- */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* ---------------------- */

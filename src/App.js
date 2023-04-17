@@ -16,6 +16,7 @@ import { Routes, Route, useLocation, useNavigate} from 'react-router-dom'
 import swal from 'sweetalert'
 /* ------ */
 
+
 function App () {
   const location = useLocation();
   const navigate = useNavigate();
@@ -39,6 +40,33 @@ function App () {
     }
    }, [access]);
     
+   useEffect(() => {
+
+     // Limpiar clases antiguas
+     document.body.classList.remove('login-background', 'home-background', 'favorites-background', 'about-background', 'detail-background');
+
+    // Agregar clase correspondiente a la ruta actual
+    if (location.pathname === '/') {
+      document.body.classList.add('login-background');
+    }  
+    if (location.pathname === '/home') {
+      document.body.classList.add('home-background');
+    } 
+     if (location.pathname === '/favorites') {
+      document.body.classList.add('favorites-background');
+    }  
+    if (location.pathname === '/about') {
+      document.body.classList.add('about-background');
+    }  
+    if (location.pathname.startsWith('/detail/')) {
+      const id = location.pathname.split('/detail/')[1];
+      document.body.classList.add('detail-background');
+    } 
+    if (location.pathname === '/error404'){
+      document.body.classList.add('detail-background');
+    }
+
+  }, [location]);
 
 
    const showErrorAlert = () => {
