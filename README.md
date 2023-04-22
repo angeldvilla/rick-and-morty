@@ -1,5 +1,5 @@
 <h1 align="center">Rick-Morty APP👋</h1>
-<h3 align="center"> Bienvenidos a mi creación de la app de Rick & Morty del M2 de Henry!!!</h3>
+<h3 align="center"> Bienvenidos a mi creación de la app de Rick & Morty!!!</h3>
 
 <br>
 <img src="https://es.web.img3.acsta.net/pictures/18/10/31/17/34/2348073.jpg">
