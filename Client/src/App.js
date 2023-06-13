@@ -98,6 +98,8 @@ function App () {
     
     /* `${URL_BASE}/character/${detailId}?key=${API_KEY}` */
 
+      /* axios(`http://localhost:3001/rickandmorty/character/${id}`) */
+      
       axios(`http://localhost:3001/rickandmorty/character/${id}`)
       .then((response) => response.data)
       .then((data) => {
@@ -140,7 +142,7 @@ function App () {
   };
     
   const randomCharacter = () => {
-    const idRandom = Math.floor(Math.random() * 826);
+    const idRandom = Math.floor(Math.random() * 5);
     onSearch(idRandom);
  }
 

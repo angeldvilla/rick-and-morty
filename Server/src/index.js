@@ -3,21 +3,25 @@ const data = require('./utils/data');
 
 http
 .createServer((req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*'); // dar permisos al front-end para hacer peticiones
+
+    // dar permisos al front-end para hacer peticiones
+    res.setHeader('Access-Control-Allow-Origin', '*'); 
+
+    const { url } = req;
     
-    if(req.url.includes('/rickandmorty/character'))
+    if(url.includes('/rickandmorty/character'))
     {
-        /* console.log(req.url); */
-        const id = req.url.split('/').at(-1);
-        /* console.log(id); */
+
+        const id = url.split('/').at(-1);
+        
         const characterFound = data.find((character) => {
             return character.id === +id
          })
 
-        return res.writeHead
+        res.writeHead
         (200, 
         {"Content-type": "application/json"})
-        .end(JSON.stringify(characterFound))
+        return res.end(JSON.stringify(characterFound))
     }
 })
 .listen(3001)
