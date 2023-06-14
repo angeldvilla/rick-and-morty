@@ -142,7 +142,7 @@ function App () {
   };
     
   const randomCharacter = () => {
-    const idRandom = Math.floor(Math.random() * 5);
+    const idRandom = Math.floor(Math.random() * 826);
     onSearch(idRandom);
  }
 
