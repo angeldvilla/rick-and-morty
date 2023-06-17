@@ -29,11 +29,21 @@ function App () {
    
 
    const login = (userData) => {
-    if(userData.username === username && userData.password === password){
+   /*  if(userData.username === username && userData.password === password){
       setAccess(true);
       navigate('/home');
-    }
-   }
+    } */
+    const { username, password } = userData;
+   
+    const URL = 'http://localhost:3001/rickandmorty/login/';
+   
+    axios(URL + `?username=${username}&password=${password}`)
+    .then(({ data }) => {
+      const { access } = data;
+      setAccess(access);
+      access && navigate('/home');
+      });
+  }
    
    useEffect(() => {
     if(!access && !['/', '/home', '/favorites', '/about'].includes(location.pathname) ){
@@ -41,8 +51,8 @@ function App () {
     }
    }, [access]);
     
+   
    useEffect(() => {
-
      // Limpiar clases antiguas
      document.body.classList.remove('login-background', 'home-background', 'favorites-background', 'about-background', 'detail-background');
 
