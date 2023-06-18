@@ -22,7 +22,11 @@ const rootReducer = (state = initialState, action) => {
         allCharacters: [...state.allCharacters, action.payload],
       }; */
     case ADD_FAVORITES:
-      return { ...state, myFavorites: action.payload, allCharacters: action.payload };
+      return { 
+        ...state, 
+        myFavorites: action.payload, 
+        allCharacters: action.payload 
+        };
 
     /* case REMOVE_FAVORITES:
       return {
@@ -31,7 +35,11 @@ const rootReducer = (state = initialState, action) => {
       }; */
 
     case REMOVE_FAVORITES:
-      return { ...state, myFavorites: action.payload };
+      return { 
+        ...state, 
+        myFavorites: action.payload,
+        allCharacters: action.payload 
+        };
 
     case REMOVE_FAVORITE_CHARACTER:
       return {

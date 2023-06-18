@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { addFavorites, removeFavorites, removeFavoriteCharacter} from '../../redux/action';
 
-const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFavorites, removeFavoriteCharacter}) => 
+const Card = ({id, name, image, onClose, addFavorites, removeFavorites, removeFavoriteCharacter}) => 
 {
    const [isFav, setisFav] = useState(false);
    const favorites = useSelector(state => state.myFavorites);
@@ -26,7 +26,7 @@ const Card = ({id, name, species, gender, image, onClose, addFavorites, removeFa
       }
       else{   
          setisFav(true)
-         addFavorites({id, name, species, gender, image})
+         addFavorites({id, name, image})
       }
    }
 
