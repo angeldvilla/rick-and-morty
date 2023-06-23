@@ -48,12 +48,20 @@ const rootReducer = (state = initialState, action) => {
           (favorite) => favorite.id !== action.payload
         ),
         allCharacters: state.allCharacters.filter(
-          (personaje) => personaje.id !== action.payload
+          (character) => character.id !== action.payload
         ),
       };
 
     case FILTER:
-      let charactersFilters;
+      const allCharactersFiltered = state.allCharacters.filter(character => character.gender === action.payload)
+      return {
+          ...state,
+          myFavorites: 
+          action.payload === 'All'
+              ? [...state.allCharacters]
+              : allCharactersFiltered
+      }
+    /*   let charactersFilters;
       if (action.payload === "All") {
         return {
           ...state,
@@ -67,26 +75,8 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         myFavorites: charactersFilters,
-      };
-
-    //CON TERNARIOS
-    /*case FILTER:
-       const charactersFilters = action.payload === "All" ? state.allCharacters : state.allCharacters.filter((character) => character.gender === action.payload);
-      return {
-        ...state,
-        myFavorites: charactersFilters,
       }; */
 
-    /*   const allCharactersFiltered = state.allCharacters.filter(
-          (character) => character.gender === action.payload
-        );
-        return {
-          ...state,
-          myFavorites:
-            action.payload === "ALL"
-              /* ? [...state.allCharacters] 
-              : allCharactersFiltered,
-        }; */
 
     case ORDER:
       const charactersOrdeneds = [...state.myFavorites].sort((asc, des) => {

@@ -13,7 +13,7 @@ const { postFav, deleteFav } = require('../controllers/handleFavorites');
 //* CREANDO LAS RUTAS 
 mainRoutes.get('/character/:id', getCharById);
 mainRoutes.get('/login', login);
-mainRoutes.post('/fav', postFav);
+mainRoutes.post('/fav',postFav);
 mainRoutes.delete('/fav/:id', deleteFav);
 
 

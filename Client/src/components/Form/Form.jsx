@@ -79,7 +79,7 @@ const handleInputChange = (event) => {
           <div className={style.bottomContainer}>
             <div className={style.rotatehorizontalcenter}>
             <button className={style.loginButton}>LOGIN
-            <span class="material-symbols-outlined">
+            <span className="material-symbols-outlined">
             login
           </span></button>
           </div>

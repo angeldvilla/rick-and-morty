@@ -22,40 +22,10 @@
 
 /* SERVER CON WEBPACK */
 /* -------------------------- */
+;
 
-
-
-//? SERVER CON EXPRESS
-
-const express = require('express');
-const server = express();
-const morgan = require('morgan');
-const mainRoutes = require('./routes/index');
+const server = require('./app');
 const PORT = 3001;
-
-//* MIDDLEWARE QUE LLAMA EXPRESS JSON
-server.use(express.json());
-server.use(morgan('dev'));
-
-//! MIDDLEWARE CREADO 
-server.use((req, res, next) => {
-   res.header('Access-Control-Allow-Origin', '*');
-   res.header('Access-Control-Allow-Credentials', 'true');
-   res.header(
-      'Access-Control-Allow-Headers',
-      'Origin, X-Requested-With, Content-Type, Accept'
-   );
-   res.header(
-      'Access-Control-Allow-Methods',
-      'GET, POST, OPTIONS, PUT, DELETE'
-   );
-   next();
-});
-
-
-//* MIDDLEWARE QUE AGREGA EL STRING"/rickandmorty" ANTES DE CADA RUTA
-server.use('/rickandmorty', mainRoutes);
-
 
 //? EL SERVER ESCUCHA EN EL PORT 3001
 server.listen(PORT, () => {

@@ -16,7 +16,7 @@ const Card = ({id, name, image, onClose, addFavorites, removeFavorites, removeFa
             setisFav(true);
          }
       });
-   }, [favorites]);
+   }, [favorites, id]);
    
    
    const handleFavorite = () => {
